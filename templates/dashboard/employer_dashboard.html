@@ -1,0 +1,39 @@
+{% extends 'dashboard/base.html' %}
+{% load joblyfy %}
+{% block title %}Employer dashboard — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">GREAT TEAMS START HERE</p>
+            <h1>
+                Welcome, {{ user.first_name|default:user.username }}<span class="hello-dot">.</span>
+            </h1>
+            <p>Here’s what’s happening at {{ user.employer.company_name }}.</p>
+        </div>
+        <a class="button" href="{% url 'jobs:post_job' %}">{% icon 'plus' %}Post a job</a>
+    </header>
+    <div class="stat-grid">
+        <article><span class="stat-icon">{% icon 'briefcase' %}</span><strong>{{ active_jobs }}</strong><span>Open jobs</span></article><article><span class="stat-icon blue">{% icon 'file' %}</span><strong>{{ stats.total }}</strong><span>Total applications</span></article><article><span class="stat-icon peach">{% icon 'clock' %}</span><strong>{{ stats.pending }}</strong><span>Awaiting review</span></article><article><span class="stat-icon green">{% icon 'check' %}</span><strong>{{ stats.accepted }}</strong><span>Accepted</span></article>
+    </div>
+    {% include 'dashboard/includes/status_distribution.html' %}
+    <section class="panel">
+        <div class="section-heading compact">
+            <div>
+                <h2>New faces. New possibilities.</h2>
+                <p>Your latest candidate applications.</p>
+            </div>
+            <a class="text-link" href="{% url 'dashboard:employer_applications' %}">View all {% icon 'arrow' %}</a>
+        </div>
+        {% include 'dashboard/includes/application_table.html' with applications=recent_applications employer_mode=True %}
+    </section>
+    <section class="panel top-gap">
+        <div class="section-heading compact">
+            <div>
+                <h2>Your latest job posts</h2>
+                <p>{{ total_jobs }} job{{ total_jobs|pluralize }} posted in total.</p>
+            </div>
+            <a class="text-link" href="{% url 'dashboard:manage_jobs' %}">Manage jobs {% icon 'arrow' %}</a>
+        </div>
+        {% include 'dashboard/includes/job_table.html' with jobs=posted_jobs %}
+    </section>
+{% endblock %}

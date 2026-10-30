@@ -1,0 +1,64 @@
+{% load static joblyfy %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+              content="Find your next opportunity with JOBLYFY. Discover jobs, connect with employers and keep every application in one place.">
+        <meta name="theme-color" content="#5B43F5">
+        <title>{% block title %}JOBLYFY — Your next chapter{% endblock %}</title>
+        <link rel="icon"
+              type="image/svg+xml"
+              href="{% static 'images/brand.svg' %}">
+        <link rel="stylesheet" href="{% static 'css/joblyfy.css' %}">
+        <script src="{% static 'js/joblyfy.js' %}" defer></script>
+        <link rel="stylesheet" href="{% static 'css/search.css' %}">
+        <script src="{% static 'js/search.js' %}" defer></script>
+        <link rel="stylesheet" href="{% static 'css/screening.css' %}">
+        <script src="{% static 'js/screening.js' %}" defer></script>
+        <link rel="stylesheet" href="{% static 'css/premium.css' %}">
+        <link rel="stylesheet" href="{% static 'css/motion.css' %}">
+        <script src="{% static 'js/motion.js' %}" defer></script>
+        <script src="{% static 'js/saved-jobs.js' %}" defer></script>
+        {% if not user.is_authenticated and request.resolver_match.app_name == 'jobs' and request.method == 'GET' %}
+            <link rel="stylesheet" href="{% static 'css/page-transitions.css' %}">
+        {% endif %}
+        {% block extra_css %}{% endblock %}
+    </head>
+    <body class="{% block body_class %}{% endblock %}">
+        <a class="skip-link" href="#main">Skip to content</a>
+        {% include "includes/header.html" %}
+        {{ location_catalog|json_script:"location-catalog" }}
+        {% if sample_mode %}
+            <div class="sample-banner">
+                <strong>Development sample mode</strong> · Companies, vacancies and pay marked Sample or Demo are fictional. Career samples support local practice applications only; no real hiring takes place.
+            </div>
+        {% endif %}
+        {% if messages %}
+            <div class="container messages" aria-live="polite">
+                {% for message in messages %}
+                    <div class="notice {{ message.tags }}" role="status">
+                        {% icon 'check' %}<span>{{ message }}</span>
+                        <button type="button"
+                                class="icon-button"
+                                data-dismiss
+                                aria-label="Dismiss message">{% icon 'close' %}</button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <main id="main" tabindex="-1">
+            {% block content %}{% endblock %}
+        </main>
+        {% block footer %}
+            {% include "includes/footer.html" %}
+        {% endblock %}
+        <aside class="action-feedback" data-action-feedback hidden aria-label="Action feedback">
+            <div role="status" aria-live="polite" aria-atomic="true" data-action-message></div>
+            <a href="{% url 'dashboard:saved_jobs' %}" data-action-link>View saved jobs</a>
+            <button class="icon-button" type="button" data-action-dismiss aria-label="Dismiss update">{% icon 'close' %}</button>
+        </aside>
+        {% block extra_js %}{% endblock %}
+    </body>
+</html>

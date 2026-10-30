@@ -1,0 +1,9 @@
+{% load joblyfy %}
+<div class="empty-state">
+    <span class="empty-icon">{% icon 'search' %}</span>
+    <h3>{{ title|default:'Nothing here just yet' }}</h3>
+    <p>{{ message|default:'New opportunities will appear here when they are available.' }}</p>
+    {% if action_url %}
+        <a class="button button-light" href="{{ action_url }}">{{ action_label|default:'Explore jobs' }} {% icon 'arrow' %}</a>
+    {% endif %}
+</div>

@@ -1,0 +1,23 @@
+{% extends 'accounts/auth_base.html' %}
+{% load joblyfy %}
+{% block title %}Welcome back — JOBLYFY{% endblock %}
+{% block auth_content %}
+    <p class="eyebrow">YOUR NEXT CHAPTER CONTINUES</p>
+    <h1>Good to see you.</h1>
+    <p class="muted intro">Sign in to your JOBLYFY account.</p>
+    {% if throttled %}
+        <div class="notice error" role="alert">Too many sign-in attempts. Please try again in 15 minutes.</div>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}">
+        {% include 'includes/fields.html' %}
+        <div class="align-right">
+            <a href="{% url 'accounts:password_reset' %}">Forgot password?</a>
+        </div>
+        <button class="button full top-gap" type="submit">Sign in {% icon 'arrow' %}</button>
+    </form>
+    <p class="auth-switch">
+        New to JOBLYFY? <a href="{% url 'accounts:signup' %}">Create an account</a>
+    </p>
+{% endblock %}

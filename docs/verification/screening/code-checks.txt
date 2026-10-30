@@ -1,0 +1,4 @@
+Python dependency check: no broken requirements.
+Ruff F checks on apps/ and core/: passed.
+Node syntax checks: static/js/screening.js and static/js/joblyfy.js passed.
+QA formatters and browser tooling are not application dependencies.

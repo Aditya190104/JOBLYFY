@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load joblyfy %}
+{% block title %}{{ company.company_name }} — JOBLYFY{% endblock %}
+{% block content %}
+    <div class="container detail-page">
+        <a class="back-link" href="{% url 'jobs:companies' %}">← All companies</a>
+        <section class="panel detail-heading">
+            <div class="identity">
+                {% include 'includes/company_logo.html' with large=True %}
+                <div>
+                    <p class="eyebrow">MEET YOUR NEXT TEAM</p>
+                    <h1>{{ company.company_name }}</h1>
+                    <p class="muted">
+                        {{ company.industry }}
+                        {% if company.industry and company.location %}·{% endif %}
+                        {{ company.location }}
+                    </p>
+                </div>
+            </div>
+            {% if company.is_demo %}<span class="sample-label">Fictional sample company</span>{% endif %}
+            <span class="tag">{{ company.open_count }} open role{{ company.open_count|pluralize }}</span>
+        </section>
+        <div class="detail-layout">
+            <article>
+                <div class="panel prose">
+                    <h2>About the company</h2>
+                    {{ company.company_description|default:'This team has not added an introduction yet.'|linebreaks }}
+                </div>
+                <section class="panel company-insights">
+                    <p class="eyebrow">A MORE INFORMED NEXT STEP</p>
+                    <h2>Company insights</h2>
+                    <div class="insights-grid">
+                        <div>
+                            <span class="insight-number">
+                                {% if company.review_count %}
+                                    {{ company.average_rating|floatformat:1 }} <small>/ 5</small>
+                                {% else %}
+                                    —
+                                {% endif %}
+                                </span><strong>{{ company.review_count }} published review{{ company.review_count|pluralize }}</strong>
+                                <p>From users describing their own experience. Employment is self-reported.</p>
+                            </div>
+                            <div>
+                                {% if salary_insights.count %}
+                                    <span class="insight-number salary-insight">₹{{ salary_insights.low|floatformat:0 }}–{{ salary_insights.high|floatformat:0 }}</span><strong>Annual INR · {{ salary_insights.count }} open role{{ salary_insights.count|pluralize }}</strong>
+                                    <p>
+                                        Lowest to highest advertised annual range across this company’s open listings. Not a market estimate or employee-reported pay.
+                                    </p>
+                                {% else %}
+                                    <span class="insight-number">—</span><strong>No structured salary data yet</strong>
+                                    <p>Annual salary insights appear when employers provide INR ranges. Samples are excluded.</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </section>
+                    <section class="panel company-reviews" id="reviews">
+                        <div class="section-heading compact">
+                            <h2>People’s perspectives</h2>
+                            {% if user.is_job_seeker and not company.is_demo %}
+                                <a class="button button-light small"
+                                   href="{% url 'jobs:company_review' company.pk %}">
+                                    {% if own_review %}
+                                        Edit your review
+                                    {% else %}
+                                        Share your experience
+                                    {% endif %}
+                                </a>
+                            {% elif not user.is_authenticated and not company.is_demo %}
+                                <a href="{% url 'accounts:login' %}?next={% url 'jobs:company_review' company.pk %}">Sign in to review</a>
+                            {% endif %}
+                        </div>
+                        <p class="help">
+                            Reviews are moderated before publication. They reflect individual experiences, not independently verified employment.
+                        </p>
+                        {% if own_review %}
+                            <div class="notice">
+                                Your review: {{ own_review.get_status_display }}.
+                                <form method="post"
+                                      action="{% url 'jobs:remove_review' own_review.pk %}"
+                                      data-confirm="Remove your company review?">
+                                    {% csrf_token %}
+                                    <button class="text-button" type="submit">Remove review</button>
+                                </form>
+                            </div>
+                        {% endif %}
+                        {% for review in reviews %}
+                            <article class="review">
+                                <div class="review-meta">
+                                    <strong>{{ review.rating }} / 5</strong><span>{{ review.get_relationship_display }} · self-reported</span><time datetime="{{ review.created_at|date:'Y-m-d' }}">{{ review.created_at|date:'M Y' }}</time>
+                                </div>
+                                <h3>{{ review.title }}</h3>
+                                {{ review.body|linebreaks }}</article>{% empty %}
+                                <p class="empty-review">No published reviews yet. Real experiences belong here — we never generate reviews.</p>
+                            {% endfor %}
+                            {% if reviews.has_other_pages %}
+                                <nav class="pagination" aria-label="Review pages">
+                                    {% if reviews.has_previous %}
+                                        <a href="{% querystring review_page=reviews.previous_page_number %}#reviews">Previous</a>
+                                    {% endif %}
+                                    <span>{{ reviews.number }} of {{ reviews.paginator.num_pages }}</span>
+                                    {% if reviews.has_next %}
+                                        <a href="{% querystring review_page=reviews.next_page_number %}#reviews">Next</a>
+                                    {% endif %}
+                                </nav>
+                            {% endif %}
+                        </section>
+                        <div class="section-heading top-gap">
+                            <h2>Find your place here.</h2>
+                        </div>
+                        <div class="job-grid two">
+                            {% for job in active_jobs %}
+                                {% include 'jobs/includes/job_card.html' %}
+                            {% empty %}
+                                {% include 'includes/empty.html' with title='No open roles right now.' message='This company’s next opportunity will appear here when it is published.' %}
+                            {% endfor %}
+                        </div>
+                        {% include 'jobs/includes/pagination.html' %}
+                    </article>
+                    <aside class="panel fit">
+                        <h2>Company overview</h2>
+                        <dl class="facts">
+                            <div>
+                                <dt>Industry</dt>
+                                <dd>
+                                    {{ company.industry|default:'Not specified' }}
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Location</dt>
+                                <dd>
+                                    {{ company.location|default:'Not specified' }}
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Joined</dt>
+                                <dd>
+                                    {{ company.user.date_joined|date:'F Y' }}
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Open roles</dt>
+                                <dd>
+                                    {{ company.open_count }}
+                                </dd>
+                            </div>
+                        </dl>
+                        {% if company.company_website %}
+                            <a class="button button-light full"
+                               href="{{ company.company_website }}"
+                               rel="noopener noreferrer nofollow"
+                               target="_blank">Visit website {% icon 'arrow' %}</a>
+                        {% endif %}
+                    </aside>
+                </div>
+            </div>
+        {% endblock %}

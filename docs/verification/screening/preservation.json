@@ -1,0 +1,109 @@
+{
+  "tables": [
+    {
+      "table": "auth_group_permissions",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "auth_group",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "accounts_customuser",
+      "original_rows": 6,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "accounts_customuser_groups",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "accounts_customuser_user_permissions",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "django_admin_log",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "jobs_category",
+      "original_rows": 8,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "accounts_jobseeker",
+      "original_rows": 4,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "jobs_application",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "jobs_savedjob",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "accounts_employer",
+      "original_rows": 2,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "accounts_jobpreference",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "jobs_job",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "jobs_companyreview",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "dashboard_notification",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "joblyfy_cache",
+      "original_rows": 0,
+      "original_columns_unchanged": true
+    },
+    {
+      "table": "django_session",
+      "original_rows": 1,
+      "original_columns_unchanged": true
+    }
+  ],
+  "unchanged_original_migration_files": 12,
+  "integrity_check": "ok",
+  "foreign_key_errors": [],
+  "counts": {
+    "accounts_customuser": 6,
+    "accounts_jobseeker": 4,
+    "accounts_employer": 2,
+    "jobs_category": 8,
+    "jobs_job": 0,
+    "jobs_application": 0,
+    "jobs_applicationdraft": 0,
+    "jobs_screeningquestion": 0,
+    "jobs_screeninganswer": 0,
+    "jobs_eligibilityrule": 0
+  },
+  "metadata_original_rows_preserved": [
+    "django_content_type",
+    "auth_permission",
+    "django_migrations"
+  ]
+}

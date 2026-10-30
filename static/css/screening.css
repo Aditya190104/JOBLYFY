@@ -1,0 +1,459 @@
+/* Incremental hiring UI using the existing JOBLYFY layout and palette. */
+.application-page {
+    padding-block: 36px 72px
+}
+
+.application-heading,
+.question-heading,
+.review-resume,
+.draft-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.application-heading h1 {
+    font-size: clamp(1.8rem, 4vw, 2.65rem);
+    margin: 8px 0
+}
+
+.application-heading p {
+    color: var(--muted, #62667c)
+}
+
+.application-steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    margin: 30px 0
+}
+
+.application-steps>a,
+.step-unavailable {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 12px;
+    border: 1px solid #deddeb;
+    border-radius: 12px;
+    font-size: .875rem;
+    background: white;
+    font-weight: 650
+}
+
+.application-steps>a>span,
+.step-unavailable>span {
+    display: grid;
+    place-items: center;
+    flex: 0 0 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #efecff;
+    color: #4934bd
+}
+
+.application-steps [aria-current=step] {
+    background: #f2efff;
+    border-color: #6850e2;
+    color: #4934bd
+}
+
+.step-unavailable {
+    color: #616579;
+    background: #f8f8fc
+}
+
+.application-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 305px;
+    gap: 26px;
+    align-items: start
+}
+
+.application-layout>*,
+.job-editor,
+.editor-layout>* {
+    min-width: 0
+}
+
+.application-layout .panel,
+.job-editor .panel {
+    margin-bottom: 22px
+}
+
+.application-layout aside .panel {
+    position: sticky;
+    top: 100px
+}
+
+.assessment {
+    padding: 28px;
+    border: 1px solid #deddec;
+    border-radius: 18px;
+    background: #fff;
+    margin: 22px 0;
+    overflow-wrap: anywhere
+}
+
+.assessment>p {
+    color: #5d6279;
+    font-size: .92rem
+}
+
+.assessment-blocked {
+    border-color: #d09292;
+    background: #fffafa
+}
+
+.assessment-met {
+    border-color: #91c5b1
+}
+
+.assessment-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #e6e5ed
+}
+
+.assessment-row h3 {
+    font-size: 1rem;
+    margin: 0 0 6px
+}
+
+.assessment-row p {
+    font-size: .88rem;
+    margin: 5px 0
+}
+
+.assessment-state {
+    flex-shrink: 0;
+    display: inline-block;
+    max-width: 150px;
+    padding: 5px 9px;
+    border-radius: 7px;
+    font-size: .75rem;
+    font-weight: 700;
+    background: #f0edf9;
+    color: #52486f
+}
+
+.state-met {
+    background: #e5f5ec;
+    color: #226449
+}
+
+.state-unmet {
+    background: #fbe9e9;
+    color: #933737
+}
+
+.state-unknown {
+    background: #fff0cd;
+    color: #805300
+}
+
+.rule-policy {
+    font-size: .74rem;
+    color: #555b70
+}
+
+.preferred-results {
+    padding-top: 16px;
+    border-top: 1px solid #e6e5ed
+}
+
+.preferred-results h3 {
+    font-size: 1rem
+}
+
+.choice-group {
+    padding: 0;
+    border: 0;
+    min-width: 0
+}
+
+.choice-group legend {
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: 10px
+}
+
+.choice-group>div {
+    display: grid;
+    gap: 8px
+}
+
+.choice-group label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #f7f6fc;
+    border: 1px solid #e5e2f0;
+    border-radius: 8px;
+    padding: 12px
+}
+
+.choice-group input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0
+}
+
+.review-resume {
+    border: 1px solid #e4e0f0;
+    background: #faf9ff;
+    border-radius: 12px;
+    padding: 18px;
+    margin-block: 24px
+}
+
+.review-resume h3 {
+    margin: 0
+}
+
+.review-resume p {
+    margin: 6px 0 0;
+    overflow-wrap: anywhere
+}
+
+.job-editor .panel h2 {
+    font-size: 1.3rem;
+    margin-top: 0
+}
+
+.rules-settings {
+    display: grid;
+    gap: 8px
+}
+
+.rules-settings .check-field {
+    background: #f7f6fd;
+    padding: 12px;
+    border-radius: 8px
+}
+
+.question-editor {
+    margin-bottom: 20px
+}
+
+.question-heading h2 {
+    font-size: 1.2rem
+}
+
+.question-editor .check-field {
+    margin-block: 14px
+}
+
+.question-deleted {
+    border: 2px dashed #ae5050
+}
+
+.question-deleted h2::after {
+    content: ' · marked for removal';
+    font-weight: 400;
+    font-size: .85rem
+}
+
+.js-only {
+    display: none !important
+}
+
+.js-screening .js-only {
+    display: flex !important
+}
+
+.answer-record {
+    padding: 18px 0;
+    border-top: 1px solid #e8e5f0;
+    overflow-wrap: anywhere
+}
+
+.answer-record h3 {
+    font-size: 1rem
+}
+
+.saved-jd {
+    margin-block: 24px;
+    overflow-wrap: anywhere
+}
+
+.saved-jd summary {
+    cursor: pointer;
+    font-weight: 700
+}
+
+.saved-jd[open] summary {
+    margin-bottom: 20px
+}
+
+.draft-row {
+    padding: 18px 0;
+    border-top: 1px solid #e8e5f0
+}
+
+.draft-row>div:first-child {
+    flex: 1;
+    min-width: 0
+}
+
+.draft-row p {
+    margin: 5px 0;
+    font-size: .85rem;
+    color: #5e647a
+}
+
+.draft-row strong {
+    overflow-wrap: anywhere
+}
+
+.job-editor .form-actions {
+    margin-bottom: 30px
+}
+
+.form-actions {
+    flex-wrap: wrap
+}
+
+.dashboard-main>.panel>.row-actions {
+    flex-wrap: wrap
+}
+
+.dashboard-main .tabs {
+    max-width: 100%;
+    overflow-x: auto;
+    gap: 18px
+}
+
+.dashboard-main .tabs a {
+    flex-shrink: 0
+}
+
+@media(max-width:1100px) {
+    .application-layout {
+        grid-template-columns: minmax(0, 1fr) 270px
+    }
+
+    .application-steps>a,
+    .step-unavailable {
+        padding: 12px 8px;
+        gap: 6px;
+        font-size: .8rem
+    }
+
+    .editor-layout {
+        grid-template-columns: minmax(0, 1fr)
+    }
+
+    .editor-layout>.tips {
+        position: static
+    }
+}
+
+@media(max-width:800px) {
+    .application-layout {
+        grid-template-columns: 1fr
+    }
+
+    .application-layout aside .panel {
+        position: static
+    }
+
+    .application-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .application-heading {
+        align-items: flex-start
+    }
+
+    .assessment {
+        padding: 20px
+    }
+
+    .assessment-row {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .assessment-state {
+        max-width: none
+    }
+
+    .review-resume,
+    .question-heading {
+        flex-wrap: wrap
+    }
+
+    .draft-row {
+        flex-wrap: wrap
+    }
+
+    .draft-row>div:first-child {
+        flex-basis: 100%
+    }
+}
+
+@media(max-width:480px) {
+    .application-page {
+        padding-top: 24px
+    }
+
+    .application-heading {
+        flex-direction: column
+    }
+
+    .application-steps>a,
+    .step-unavailable {
+        font-size: .75rem;
+        padding: 10px 7px
+    }
+
+    .application-steps>a>span,
+    .step-unavailable>span {
+        flex-basis: 23px;
+        height: 23px
+    }
+
+    .application-layout .panel {
+        padding: 20px
+    }
+
+    .assessment-row h3 {
+        overflow-wrap: anywhere
+    }
+}
+
+.question-editor .row-actions,
+.question-manager-actions {
+    flex-wrap: wrap
+}
+
+.application-page .check-field,
+.job-editor .check-field,
+.question-editor .check-field {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr);
+    align-items: start;
+    gap: 8px 12px
+}
+
+.application-page .check-field input,
+.job-editor .check-field input,
+.question-editor .check-field input {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px
+}
+
+.application-page .check-field .help,
+.application-page .check-field .field-errors,
+.job-editor .check-field .help,
+.job-editor .check-field .field-errors,
+.question-editor .check-field .help,
+.question-editor .check-field .field-errors {
+    grid-column: 1/-1
+}

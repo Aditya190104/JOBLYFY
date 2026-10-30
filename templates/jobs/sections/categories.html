@@ -1,0 +1,20 @@
+{% load joblyfy %}
+<section class="section container">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">FIND YOUR DIRECTION</p>
+            <h2>Where do you want to go?</h2>
+        </div>
+        <a class="text-link" href="{% url 'jobs:categories' %}">All categories {% icon 'arrow' %}</a>
+    </div>
+    <div class="category-grid">
+        {% for category in categories %}
+        <a class="category-card"
+           href="{% url 'jobs:category_detail' category.pk %}"><span class="category-icon">{% cycle '⌘' '✦' '↗' '◈' '◎' '◉' '⌁' '⊕' %}</span>
+        <h3>{{ category.name }}</h3>
+        <p>{{ category.open_count }} open position{{ category.open_count|pluralize }}</p>
+        <span class="category-arrow">{% icon 'arrow' %}</span></a>{% empty %}
+            {% include 'includes/empty.html' with title='Categories are on their way' %}
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,50 @@
+[
+  {
+    "DEBUG": "True",
+    "trusted_proxy": "False",
+    "settings": {
+      "SESSION_ENGINE": "django.contrib.sessions.backends.db",
+      "SESSION_COOKIE_AGE": 1209600,
+      "SESSION_EXPIRE_AT_BROWSER_CLOSE": true,
+      "SESSION_COOKIE_SECURE": false,
+      "CSRF_COOKIE_SECURE": false,
+      "SESSION_COOKIE_HTTPONLY": true,
+      "SESSION_COOKIE_SAMESITE": "Lax",
+      "SECURE_PROXY_SSL_HEADER": null,
+      "SECURE_SSL_REDIRECT": false
+    }
+  },
+  {
+    "DEBUG": "False",
+    "trusted_proxy": "False",
+    "settings": {
+      "SESSION_ENGINE": "django.contrib.sessions.backends.db",
+      "SESSION_COOKIE_AGE": 1209600,
+      "SESSION_EXPIRE_AT_BROWSER_CLOSE": true,
+      "SESSION_COOKIE_SECURE": true,
+      "CSRF_COOKIE_SECURE": true,
+      "SESSION_COOKIE_HTTPONLY": true,
+      "SESSION_COOKIE_SAMESITE": "Lax",
+      "SECURE_PROXY_SSL_HEADER": null,
+      "SECURE_SSL_REDIRECT": true
+    }
+  },
+  {
+    "DEBUG": "False",
+    "trusted_proxy": "True",
+    "settings": {
+      "SESSION_ENGINE": "django.contrib.sessions.backends.db",
+      "SESSION_COOKIE_AGE": 1209600,
+      "SESSION_EXPIRE_AT_BROWSER_CLOSE": true,
+      "SESSION_COOKIE_SECURE": true,
+      "CSRF_COOKIE_SECURE": true,
+      "SESSION_COOKIE_HTTPONLY": true,
+      "SESSION_COOKIE_SAMESITE": "Lax",
+      "SECURE_PROXY_SSL_HEADER": [
+        "HTTP_X_FORWARDED_PROTO",
+        "https"
+      ],
+      "SECURE_SSL_REDIRECT": true
+    }
+  }
+]

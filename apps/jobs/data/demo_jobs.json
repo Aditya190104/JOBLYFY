@@ -1,0 +1,817 @@
+{
+  "companies": {
+    "stack": {
+      "username": "joblyfy_demo_stack",
+      "company_name": "Stackway Studio — Demo",
+      "industry": "Software development",
+      "location": "Mohali, Punjab",
+      "company_description": "Fictional demonstration company, not a verified employer. Stackway Studio represents a product engineering team building scheduling and operations tools for local businesses. Its sample roles illustrate mentoring, web delivery and quality assurance. All vacancies, salaries and benefits are illustrative; applications are local practice records only."
+    },
+    "pixel": {
+      "username": "joblyfy_demo_pixel",
+      "company_name": "Pixel Grove Design — Demo",
+      "industry": "Product and experience design",
+      "location": "Chandigarh",
+      "company_description": "Fictional demonstration company, not a verified employer. Pixel Grove Design represents a research-led studio prototyping digital services, accessible websites and consistent design systems. These portfolio exercises demonstrate the hiring workflow; they are not real client commissions or employment offers."
+    },
+    "cloud": {
+      "username": "joblyfy_demo_cloud",
+      "company_name": "Cloudfield Labs — Demo",
+      "industry": "Data platforms and cloud engineering",
+      "location": "Bengaluru, Karnataka",
+      "company_description": "Fictional demonstration company, not a verified employer. Cloudfield Labs represents a team building data services, reporting pipelines and dependable software delivery. Backend, analytics, infrastructure and AI vacancies describe invented projects and illustrative compensation. No actual recruitment is implied."
+    },
+    "route": {
+      "username": "joblyfy_demo_route",
+      "company_name": "Routecraft Digital — Demo",
+      "industry": "Web and mobile applications",
+      "location": "Pune, Maharashtra",
+      "company_description": "Fictional demonstration company, not a verified employer. Routecraft Digital represents a distributed group building browser and mobile tools for service teams. Sample roles demonstrate API integration, maintainability and collaborative delivery. Applications are for local product testing rather than employment."
+    }
+  },
+  "jobs": [
+    {
+      "slug": "mern-full-stack",
+      "title": "Full Stack Developer — MERN",
+      "category": "Full Stack Developer",
+      "company": "stack",
+      "location": "Mohali, Punjab",
+      "work_mode": "hybrid",
+      "job_type": "full_time",
+      "experience_level": "mid",
+      "experience": [
+        2,
+        4
+      ],
+      "salary": [
+        600000,
+        1000000
+      ],
+      "mandatory": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "preferred": [
+        "TypeScript",
+        "Jest",
+        "Docker"
+      ],
+      "description": "Build the customer and operations sides of a fictional appointment-management product. The role spans React workflows, Express endpoints and MongoDB documents, with attention to permissions and reliable updates. You would own a small feature from a written requirement through implementation, testing and a reviewed release. The example team plans collaboration days in Mohali and values understandable code, clear API contracts and recoverable errors.",
+      "responsibilities": "Implement responsive booking and account screens in React.\nDesign validated Express APIs and indexes for common MongoDB queries.\nWrite tests for authorization and booking conflicts.\nReview pull requests and investigate reported issues.",
+      "requirements": "Explain HTTP status codes, asynchronous JavaScript and safe user-input handling. Discuss a complete feature you built, including tests and trade-offs.",
+      "project_prompt": "Describe how you would prevent two users from booking the same appointment slot.",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": true,
+      "monthly": false,
+      "qualifications": "Full Stack Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 2–4 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "frontend-fresher",
+      "title": "Frontend Developer — Fresher",
+      "category": "Frontend Developer",
+      "company": "stack",
+      "location": "Ludhiana, Punjab",
+      "work_mode": "onsite",
+      "job_type": "full_time",
+      "experience_level": "entry",
+      "experience": [
+        0,
+        1
+      ],
+      "salary": [
+        300000,
+        450000
+      ],
+      "mandatory": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ],
+      "preferred": [
+        "Git",
+        "Accessibility",
+        "Testing Library"
+      ],
+      "description": "Improve fictional merchant dashboards for everyday tasks. This entry-level role concentrates on semantic HTML, responsive CSS and simple React state flows. You would turn a design into working forms and lists, handle loading and error states, and ask for review when requirements are unclear. Academic projects and self-directed work are suitable evidence. The team provides feedback on small changes before assigning larger components.",
+      "responsibilities": "Build reusable form and navigation components.\nCheck layouts at phone and desktop widths.\nConnect screens to documented APIs with useful error messages.\nFix keyboard, focus and contrast issues with guidance.",
+      "requirements": "Understand JavaScript arrays, functions and DOM events. Bring a responsive project whose code you can explain.",
+      "project_prompt": "Describe how you would make a login form accessible to keyboard users.",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": true,
+      "monthly": false,
+      "qualifications": "Frontend Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 0–1 years. Freshers may use coursework and personal projects; previous employment is not required.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "django-backend",
+      "title": "Backend Developer — Django APIs",
+      "category": "Backend Developer",
+      "company": "cloud",
+      "location": "Bengaluru, Karnataka",
+      "work_mode": "hybrid",
+      "job_type": "full_time",
+      "experience_level": "mid",
+      "experience": [
+        3,
+        6
+      ],
+      "salary": [
+        900000,
+        1600000
+      ],
+      "mandatory": [
+        "Python",
+        "Django",
+        "REST APIs",
+        "PostgreSQL"
+      ],
+      "preferred": [
+        "Redis",
+        "Celery",
+        "Docker"
+      ],
+      "description": "Develop the backend for a fictional inventory and order-reporting service. The example system needs clear API contracts, tenant-aware permissions and predictable database access. You would model transactions, review migrations and investigate slow queries while keeping existing clients compatible. This role suits someone who can explain successful requests as well as retries, timeouts and invalid input. Changes are tested against realistic edge cases before review.",
+      "responsibilities": "Implement validated paginated REST endpoints.\nDesign constraints and indexes for order records.\nTest ownership, transaction boundaries and retry behavior.\nDocument API changes and review deployment migrations.",
+      "requirements": "Explain transaction consistency, query plans and object-level permissions. Demonstrate a migration strategy that preserves records.",
+      "project_prompt": "How would you diagnose an API endpoint that becomes slow as its order table grows?",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": true,
+      "monthly": false,
+      "qualifications": "Backend Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 3–6 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "java-software",
+      "title": "Software Developer — Java Services",
+      "category": "Software Developer",
+      "company": "route",
+      "location": "Hyderabad, Telangana",
+      "work_mode": "onsite",
+      "job_type": "full_time",
+      "experience_level": "mid",
+      "experience": [
+        2,
+        4
+      ],
+      "salary": [
+        600000,
+        1000000
+      ],
+      "mandatory": [
+        "Java",
+        "SQL",
+        "Git"
+      ],
+      "preferred": [
+        "Spring Boot",
+        "JUnit",
+        "Docker"
+      ],
+      "description": "Maintain Java services for a fictional service-request platform. Work combines business rules, relational data and integration with other teams. You would improve existing code as often as write new code, using tests to keep established behavior stable. The focus is practical problem-solving: understand a defect, reproduce it and make a change another developer can review confidently. Clear notes and small pull requests support the team's daily work.",
+      "responsibilities": "Implement service-layer business rules in Java.\nWrite SQL queries and unit tests for boundary cases.\nInvestigate logs and reproduce integration failures.\nDocument decisions and participate in peer reviews.",
+      "requirements": "Understand collections, exception handling, object-oriented design and relational joins. Explain the tests around a change you made.",
+      "project_prompt": "Describe how you would reproduce and test an intermittent duplicate service request.",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "Software Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 2–4 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "junior-software",
+      "title": "Junior Software Engineer",
+      "category": "Junior Software Engineer",
+      "company": "stack",
+      "location": "Chandigarh",
+      "work_mode": "onsite",
+      "job_type": "full_time",
+      "experience_level": "entry",
+      "experience": [
+        0,
+        1
+      ],
+      "salary": [
+        300000,
+        500000
+      ],
+      "mandatory": [
+        "Python",
+        "Problem solving",
+        "Git"
+      ],
+      "preferred": [
+        "SQL",
+        "JavaScript",
+        "Unit testing"
+      ],
+      "description": "Start with small, reviewable tasks in a fictional internal-tools team. This role gives a fresher room to learn debugging, version control and communicating progress. You would implement data-processing features, add tests and gradually take ownership of a component. Coursework and personal projects are welcome evidence; the sample does not require a previous employer or internship. Mentors help turn an unclear requirement into a useful sequence of checks.",
+      "responsibilities": "Break requirements into testable steps.\nImplement Python functions with input validation.\nUse Git branches and respond to review comments.\nWrite notes about bugs, fixes and lessons learned.",
+      "requirements": "Explain loops, dictionaries, basic complexity and a debugging approach. Communicate blockers and ask focused questions.",
+      "project_prompt": "Explain how you would find repeated email addresses in a list and test your solution.",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "Junior Software Engineer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 0–1 years. Freshers may use coursework and personal projects; previous employment is not required.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "react-remote",
+      "title": "React.js Developer — Remote",
+      "category": "React.js Developer",
+      "company": "route",
+      "location": "Remote — India",
+      "work_mode": "remote",
+      "job_type": "contract",
+      "experience_level": "entry",
+      "experience": [
+        1,
+        3
+      ],
+      "salary": [
+        400000,
+        800000
+      ],
+      "mandatory": [
+        "React",
+        "JavaScript",
+        "API integration"
+      ],
+      "preferred": [
+        "TypeScript",
+        "React Query",
+        "Accessibility"
+      ],
+      "description": "Build a fictional customer self-service dashboard with a distributed team in India. This contract example focuses on reliable React components, API integration and clear asynchronous communication. You would implement request states, preserve form input after validation errors and keep navigation understandable on small screens. Deliverables are agreed in short written specifications. The compensation band is an illustrative annual equivalent, not a guaranteed contract payout.",
+      "responsibilities": "Create React screens from reviewed wireframes.\nHandle API loading, cancellation and failure states.\nTest forms and navigation with representative data.\nRecord handover notes and explain implementation trade-offs.",
+      "requirements": "Be comfortable with hooks, controlled inputs and API payloads. Work remotely within India and agree on a collaboration schedule.",
+      "project_prompt": "How would you prevent an older API response from replacing a newer search result?",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": true,
+      "monthly": false,
+      "qualifications": "React.js Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 1–3 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "python-junior",
+      "title": "Python Developer — Internal Tools",
+      "category": "Python Developer",
+      "company": "route",
+      "location": "Pune, Maharashtra",
+      "work_mode": "hybrid",
+      "job_type": "full_time",
+      "experience_level": "entry",
+      "experience": [
+        1,
+        3
+      ],
+      "salary": [
+        400000,
+        700000
+      ],
+      "mandatory": [
+        "Python",
+        "Django",
+        "SQL"
+      ],
+      "preferred": [
+        "Flask",
+        "pytest",
+        "Pandas"
+      ],
+      "description": "Build practical Python tools for a fictional operations team. Work includes importing CSV files, presenting clean records in Django and generating repeatable reports. You would validate messy input, show recoverable errors and use database transactions for related updates. Someone who enjoys turning a manual process into a dependable small application would have useful examples to discuss. Documentation should make each tool understandable to its next maintainer.",
+      "responsibilities": "Implement Django forms and import workflows.\nUse safe ORM queries and database constraints.\nTest malformed input and interrupted imports.\nDocument command usage and operational limitations.",
+      "requirements": "Understand Python exceptions, iterators and SQL joins. Explain how an import can be rerun without duplicating records.",
+      "project_prompt": "Describe how you would validate and safely rerun a CSV import.",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "Python Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 1–3 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "uiux-junior",
+      "title": "UI/UX Designer — Digital Services",
+      "category": "UI/UX Designer",
+      "company": "pixel",
+      "location": "Mohali, Punjab",
+      "work_mode": "hybrid",
+      "job_type": "full_time",
+      "experience_level": "entry",
+      "experience": [
+        1,
+        3
+      ],
+      "salary": [
+        350000,
+        700000
+      ],
+      "mandatory": [
+        "Figma",
+        "Wireframing",
+        "Prototyping",
+        "User research"
+      ],
+      "preferred": [
+        "Accessibility",
+        "Design systems",
+        "Usability testing"
+      ],
+      "description": "Explore and simplify a fictional appointment-booking journey. The role balances research questions, low-fidelity exploration and an interaction prototype. You would explain why a design helps a user complete a task rather than relying only on attractive screens. Portfolio discussions should show your contribution, constraints and what changed after feedback or a usability observation. Developers collaborate early so that important states are included in the handoff.",
+      "responsibilities": "Prepare interview guides and summarize research notes.\nMap booking flows and sketch alternative wireframes.\nBuild interactive Figma prototypes and component states.\nShare annotated handoff files and iterate with developers.",
+      "requirements": "Present a process-led case study. Explain typography, spacing, empty states and an accessible interaction choice.",
+      "project_prompt": "Describe a usability problem you investigated and how evidence changed your design.",
+      "accepted": [
+        "B.Des",
+        "BFA",
+        "B.Tech",
+        "Design diploma",
+        "Equivalent portfolio experience"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "UI/UX Designer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Des; BFA; B.Tech; Design diploma; Equivalent portfolio experience. Relevant experience: 1–3 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: design critiques, research learning time and professional-development support. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "web-designer",
+      "title": "Web Designer — Responsive Sites",
+      "category": "Web Designer",
+      "company": "pixel",
+      "location": "Ludhiana, Punjab",
+      "work_mode": "onsite",
+      "job_type": "part_time",
+      "experience_level": "entry",
+      "experience": [
+        0,
+        2
+      ],
+      "salary": [
+        300000,
+        400000
+      ],
+      "mandatory": [
+        "HTML",
+        "CSS",
+        "Responsive design",
+        "Figma"
+      ],
+      "preferred": [
+        "JavaScript",
+        "SEO basics",
+        "Accessibility"
+      ],
+      "description": "Design and implement fictional small-business websites with readable content and responsive layouts. This part-time example combines visual design with hands-on HTML and CSS. You would work from a content brief, build reusable sections and check that headings, forms and navigation work across devices. The annual amount is an illustrative part-time compensation band. Reviews focus on clarity, working links and a thoughtful presentation of the supplied content.",
+      "responsibilities": "Translate content into clear page hierarchy.\nBuild responsive layouts without horizontal overflow.\nOptimize image sizes and maintain consistent spacing.\nCheck links, labels and keyboard navigation before handoff.",
+      "requirements": "Show a responsive website and explain its layout choices. Be available for an agreed part-time schedule in Ludhiana.",
+      "project_prompt": "How would you adapt a three-column desktop layout for a small phone screen?",
+      "accepted": [
+        "B.Des",
+        "BFA",
+        "B.Tech",
+        "Design diploma",
+        "Equivalent portfolio experience"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "Web Designer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Des; BFA; B.Tech; Design diploma; Equivalent portfolio experience. Relevant experience: 0–2 years. Freshers may use coursework and personal projects; previous employment is not required.",
+      "benefits": "Illustrative benefits: design critiques, research learning time and professional-development support. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "product-designer",
+      "title": "Product Designer — Workflow Tools",
+      "category": "Product Designer",
+      "company": "pixel",
+      "location": "Bengaluru, Karnataka",
+      "work_mode": "hybrid",
+      "job_type": "full_time",
+      "experience_level": "mid",
+      "experience": [
+        3,
+        5
+      ],
+      "salary": [
+        700000,
+        1000000
+      ],
+      "mandatory": [
+        "UX research",
+        "Product design",
+        "Figma"
+      ],
+      "preferred": [
+        "Design systems",
+        "Analytics",
+        "Accessibility"
+      ],
+      "description": "Own a fictional approval workflow from problem discovery to developer handoff. The product-design example involves several user roles, incomplete information and recovery from mistakes. You would connect research findings to an interaction model, decide what to validate first and maintain consistent patterns across the product. The team values clear reasoning and collaboration. A useful case study explains the decision process, not only the final visual screens.",
+      "responsibilities": "Frame problems and propose measurable usability questions.\nPrototype approval and error-recovery flows.\nMaintain patterns and interaction specifications.\nReview implementations and follow up on user feedback.",
+      "requirements": "Present an end-to-end case study with explicit personal contributions. Explain research uncertainty, product constraints and accessibility.",
+      "project_prompt": "How would you decide whether a new approval workflow is easier to use?",
+      "accepted": [
+        "B.Des",
+        "BFA",
+        "B.Tech",
+        "Design diploma",
+        "Equivalent portfolio experience"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "Product Designer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Des; BFA; B.Tech; Design diploma; Equivalent portfolio experience. Relevant experience: 3–5 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: design critiques, research learning time and professional-development support. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "flutter-mobile",
+      "title": "Mobile App Developer — Flutter",
+      "category": "Mobile App Developer",
+      "company": "route",
+      "location": "Pune, Maharashtra",
+      "work_mode": "hybrid",
+      "job_type": "full_time",
+      "experience_level": "mid",
+      "experience": [
+        2,
+        4
+      ],
+      "salary": [
+        600000,
+        1000000
+      ],
+      "mandatory": [
+        "Flutter",
+        "Dart",
+        "REST APIs"
+      ],
+      "preferred": [
+        "Firebase",
+        "Widget testing",
+        "React Native"
+      ],
+      "description": "Build a fictional field-service mobile application for task checklists and visit notes. The role emphasizes predictable navigation, reusable Flutter widgets and resilience with limited connectivity. You would collaborate on API contracts, validate local input and test state restoration. Prior examples should identify your implementation work and explain how you found issues across screen sizes. Offline drafts and safe retries are part of the design rather than afterthoughts.",
+      "responsibilities": "Implement Dart models and reusable Flutter screens.\nHandle offline drafts and synchronization failures.\nWrite widget tests for key interactions.\nReview accessibility labels and prepare release notes.",
+      "requirements": "Explain widget lifecycle, state management and API error handling. Discuss a mobile feature with an offline or retry requirement.",
+      "project_prompt": "How would you stop an offline task update from being submitted twice?",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "Mobile App Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 2–4 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "qa-fresher",
+      "title": "QA / Software Tester — Junior",
+      "category": "QA / Software Tester",
+      "company": "stack",
+      "location": "Chandigarh",
+      "work_mode": "onsite",
+      "job_type": "full_time",
+      "experience_level": "entry",
+      "experience": [
+        0,
+        1
+      ],
+      "salary": [
+        250000,
+        450000
+      ],
+      "mandatory": [
+        "Manual testing",
+        "Test cases",
+        "Bug reporting"
+      ],
+      "preferred": [
+        "SQL",
+        "Postman",
+        "Playwright"
+      ],
+      "description": "Test a fictional customer portal before changes reach users. This junior role centers on understanding requirements, choosing useful examples and writing reproducible defect reports. You would check normal and failure paths, verify fixes and explain remaining gaps. Freshers can use coursework or personal testing exercises as evidence. An automation framework is preferred rather than mandatory; the sample prioritizes a systematic approach and clear communication.",
+      "responsibilities": "Turn acceptance criteria into focused test cases.\nExercise forms, permissions and browser layouts.\nFile defects with steps, expected results and evidence.\nRetest fixes and maintain a regression checklist.",
+      "requirements": "Explain severity versus priority and test boundary inputs. Write clear reports without exposing private user data.",
+      "project_prompt": "Write a short test approach for a job application form that must prevent duplicates.",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "QA / Software Tester applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 0–1 years. Freshers may use coursework and personal projects; previous employment is not required.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "devops-platform",
+      "title": "DevOps Engineer — Delivery Platform",
+      "category": "DevOps Engineer",
+      "company": "cloud",
+      "location": "Delhi NCR",
+      "work_mode": "hybrid",
+      "job_type": "full_time",
+      "experience_level": "senior",
+      "experience": [
+        3,
+        6
+      ],
+      "salary": [
+        1000000,
+        1800000
+      ],
+      "mandatory": [
+        "Linux",
+        "Git",
+        "Docker",
+        "CI/CD"
+      ],
+      "preferred": [
+        "Terraform",
+        "Kubernetes",
+        "Observability"
+      ],
+      "description": "Improve delivery for a fictional group of web services. This role connects repeatable builds, safe configuration and useful operational signals. You would review pipeline permissions, maintain container images and make recovery procedures testable. The example emphasizes reducing deployment surprises and documenting trade-offs. No access to real infrastructure is assumed, and applicants should never share credentials. Reliability work is planned alongside feature delivery instead of being left to emergencies.",
+      "responsibilities": "Maintain reproducible builds and container definitions.\nDesign CI checks and controlled release stages.\nTrack service health and investigate failed deployments.\nDocument restore procedures and protect secrets.",
+      "requirements": "Explain Linux processes, image layers and rollback. Discuss secret handling and least-privilege pipeline access.",
+      "project_prompt": "Outline how you would roll back a failed deployment while preserving database data.",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "BCA",
+        "B.Sc. Computer Science",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "DevOps Engineer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; BCA; B.Sc. Computer Science; Equivalent practical training. Relevant experience: 3–6 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "data-analyst",
+      "title": "Data Analyst — Operations Insights",
+      "category": "Data Analyst",
+      "company": "cloud",
+      "location": "Hyderabad, Telangana",
+      "work_mode": "hybrid",
+      "job_type": "full_time",
+      "experience_level": "entry",
+      "experience": [
+        1,
+        3
+      ],
+      "salary": [
+        400000,
+        700000
+      ],
+      "mandatory": [
+        "SQL",
+        "Python",
+        "Excel",
+        "Power BI"
+      ],
+      "preferred": [
+        "Pandas",
+        "Statistics",
+        "Data visualization"
+      ],
+      "description": "Turn fictional operational data into understandable reports for a service team. Work begins with metric definitions and source-quality checks, then moves to SQL queries and maintainable dashboards. You would distinguish missing records from real zeros and explain limitations alongside results. The aim is a useful decision aid with reproducible calculations. Reports should let another analyst trace a number back to its source and understand the assumptions used.",
+      "responsibilities": "Write SQL with documented metric definitions.\nValidate duplicates, missing values and date boundaries.\nBuild readable Excel and Power BI reports.\nUse Python for repeatable cleaning and reconciliation.",
+      "requirements": "Explain joins, aggregation and a data-quality check. Present a report and the caveats needed to interpret it.",
+      "project_prompt": "How would you investigate a dashboard total that differs from the source spreadsheet?",
+      "accepted": [
+        "B.Tech",
+        "B.Sc. Statistics",
+        "B.Sc. Mathematics",
+        "BCA",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "Data Analyst applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.Sc. Statistics; B.Sc. Mathematics; BCA; Equivalent practical training. Relevant experience: 1–3 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "ai-ml-engineer",
+      "title": "AI/ML Engineer — Applied Models",
+      "category": "AI/ML Engineer",
+      "company": "cloud",
+      "location": "Remote — India",
+      "work_mode": "remote",
+      "job_type": "full_time",
+      "experience_level": "mid",
+      "experience": [
+        2,
+        5
+      ],
+      "salary": [
+        800000,
+        1500000
+      ],
+      "mandatory": [
+        "Python",
+        "Machine learning",
+        "scikit-learn"
+      ],
+      "preferred": [
+        "PyTorch",
+        "MLflow",
+        "RAG"
+      ],
+      "description": "Develop and evaluate models for a fictional document-routing product. The example starts with a baseline, appropriate data splits and explicit error analysis before a complex model is proposed. You would maintain reproducible experiments and expose inference through a tested service. Generative AI tools are optional. Quality claims must be supported by a defined evaluation, and model limitations should be understandable to the people using the resulting predictions.",
+      "responsibilities": "Prepare datasets with documented exclusions and splits.\nCompare baselines with task-appropriate metrics.\nAnalyze errors, leakage risks and changing data.\nPackage inference code and record limitations.",
+      "requirements": "Explain training versus evaluation data, precision/recall and reproducible experiments. Remote collaboration is within India; no city restriction is imposed.",
+      "project_prompt": "How would you detect data leakage in a document-classification experiment?",
+      "accepted": [
+        "B.Tech",
+        "B.E.",
+        "M.Sc. Computer Science",
+        "M.Sc. Statistics",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": false,
+      "qualifications": "AI/ML Engineer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech; B.E.; M.Sc. Computer Science; M.Sc. Statistics; Equivalent practical training. Relevant experience: 2–5 years. Bring work examples that demonstrate your own contribution.",
+      "benefits": "Illustrative benefits: peer learning, technical workshops and a predictable review cadence. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "frontend-intern",
+      "title": "Frontend Developer Intern",
+      "category": "Frontend Developer",
+      "company": "stack",
+      "location": "Mohali, Punjab",
+      "work_mode": "hybrid",
+      "job_type": "internship",
+      "experience_level": "entry",
+      "experience": [
+        0,
+        0.5
+      ],
+      "salary": [
+        12000,
+        18000
+      ],
+      "mandatory": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "preferred": [
+        "React",
+        "Git",
+        "Accessibility"
+      ],
+      "description": "Practice frontend delivery on a fictional component library. This internship example suits a student or recent graduate who has built basic pages and wants feedback on maintainable components. Tasks are small: improve a form, fix a layout and document a state. The monthly stipend is illustrative, and its annual filter value is only twelve times the monthly band. Mentors help connect implementation choices to usability and accessibility.",
+      "responsibilities": "Build responsive HTML and CSS sections.\nAdd simple JavaScript interactions and validation.\nCheck keyboard access and report layout issues.\nExplain changes during mentor reviews.",
+      "requirements": "Know basic HTML elements, CSS layout and JavaScript events. Share a learning project, not confidential employer code.",
+      "project_prompt": "Describe one page you built and a layout problem you solved.",
+      "accepted": [
+        "B.Tech (in progress)",
+        "BCA (in progress)",
+        "B.Sc. Computer Science (in progress)",
+        "B.Tech",
+        "BCA",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": true,
+      "qualifications": "Frontend Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech (in progress); BCA (in progress); B.Sc. Computer Science (in progress); B.Tech; BCA; Equivalent practical training. Relevant experience: 0–0.5 years. Freshers may use coursework and personal projects; previous employment is not required.",
+      "benefits": "Illustrative benefits: supervised learning tasks, weekly mentor feedback and planned academic flexibility. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "python-intern",
+      "title": "Python Developer Intern",
+      "category": "Python Developer",
+      "company": "cloud",
+      "location": "Delhi NCR",
+      "work_mode": "onsite",
+      "job_type": "internship",
+      "experience_level": "entry",
+      "experience": [
+        0,
+        0.5
+      ],
+      "salary": [
+        10000,
+        16000
+      ],
+      "mandatory": [
+        "Python",
+        "SQL"
+      ],
+      "preferred": [
+        "Django",
+        "Flask",
+        "Git"
+      ],
+      "description": "Learn to build a fictional reporting utility with guidance from a backend mentor. The internship starts with Python functions and SQL queries before introducing a small web interface. You would use synthetic records, practice input validation and write down how a result was checked. Understanding and repeatability matter more than choosing a fashionable framework. Familiarity with Django or Flask is helpful but does not block the eligibility check.",
+      "responsibilities": "Write Python functions for reporting tasks.\nQuery synthetic records with basic SQL.\nTest empty, invalid and duplicate inputs.\nDocument setup and ask for code review.",
+      "requirements": "Explain lists, dictionaries, functions and a SQL SELECT. Investigate a failing test with guidance.",
+      "project_prompt": "How would you check that a script handles an empty input file correctly?",
+      "accepted": [
+        "B.Tech (in progress)",
+        "BCA (in progress)",
+        "B.Sc. Computer Science (in progress)",
+        "B.Tech",
+        "BCA",
+        "Equivalent practical training"
+      ],
+      "featured": false,
+      "monthly": true,
+      "qualifications": "Python Developer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Tech (in progress); BCA (in progress); B.Sc. Computer Science (in progress); B.Tech; BCA; Equivalent practical training. Relevant experience: 0–0.5 years. Freshers may use coursework and personal projects; previous employment is not required.",
+      "benefits": "Illustrative benefits: supervised learning tasks, weekly mentor feedback and planned academic flexibility. These are development examples, not an employment offer."
+    },
+    {
+      "slug": "uiux-intern",
+      "title": "UI/UX Designer Intern",
+      "category": "UI/UX Designer",
+      "company": "pixel",
+      "location": "Remote — India",
+      "work_mode": "remote",
+      "job_type": "internship",
+      "experience_level": "entry",
+      "experience": [
+        0,
+        1
+      ],
+      "salary": [
+        8000,
+        15000
+      ],
+      "mandatory": [
+        "Figma",
+        "Wireframing"
+      ],
+      "preferred": [
+        "Prototyping",
+        "User research",
+        "Accessibility"
+      ],
+      "description": "Explore a fictional onboarding flow while learning a structured design process. The remote internship begins with understanding a task, sketching alternatives and creating a simple Figma prototype. You would collect feedback and record which changes improved clarity. Coursework and self-initiated case studies are welcome; client work and previous employment are not prerequisites. Reviews focus on explaining choices and being willing to revise them after observing a user.",
+      "responsibilities": "Map a short onboarding journey.\nCreate low-fidelity wireframes with clear labels.\nPrototype the main path and a validation error.\nSummarize feedback and explain the next iteration.",
+      "requirements": "Know Figma frames and basic layout. Explain a design choice and revise it after feedback.",
+      "project_prompt": "What would you ask a user before redesigning an onboarding screen?",
+      "accepted": [
+        "B.Des",
+        "BFA",
+        "B.Tech",
+        "Design diploma",
+        "Equivalent portfolio experience",
+        "B.Des (in progress)"
+      ],
+      "featured": false,
+      "monthly": true,
+      "qualifications": "UI/UX Designer applicants should hold one of the accepted qualifications or practical-training routes listed in the eligibility section: B.Des; BFA; B.Tech; Design diploma; Equivalent portfolio experience; B.Des (in progress). Relevant experience: 0–1 years. Freshers may use coursework and personal projects; previous employment is not required.",
+      "benefits": "Illustrative benefits: supervised learning tasks, weekly mentor feedback and planned academic flexibility. These are development examples, not an employment offer."
+    }
+  ]
+}
+

@@ -1,0 +1,93 @@
+{% load joblyfy %}
+{% if applications %}
+    <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        {% if employer_mode %}
+                            Candidate
+                        {% else %}
+                            Opportunity
+                        {% endif %}
+                    </th>
+                    <th>
+                        {% if employer_mode %}
+                            Applied for
+                        {% else %}
+                            Company
+                        {% endif %}
+                    </th>
+                    <th>Submitted</th>
+                    <th>Status / screening</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for application in applications %}
+                    <tr>
+                        <td>
+                            {% if employer_mode %}
+                                <div class="table-identity">
+                                    <span class="avatar small">{{ application.job_seeker.user.initials }}</span>
+                                    <div>
+                                        <a href="{% url 'dashboard:candidate_detail' application.pk %}">{{ application.job_seeker.user.display_name }}</a><small>{{ application.job_seeker.headline|default:'Job seeker' }}</small>
+                                    </div>
+                                </div>
+                            {% else %}
+                                <a href="{{ application.job.get_absolute_url }}">{{ application.job.title }}</a><small>{{ application.job.location }}</small>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if employer_mode %}
+                                {{ application.job.title }}
+                            {% else %}
+                                {{ application.job.employer.company_name }}
+                            {% endif %}
+                        </td>
+                        <td>{% if application.job.is_demo %}<span class="sample-label">Practice application</span>{% endif %}<span class="submitted-date">{{ application.applied_date|date:'d M Y' }}</span></td>
+                        <td>
+                            <span class="status status-{{ application.status }}">{{ application.get_status_display }}</span><small>{{ application.get_screening_outcome_display }}</small>
+                        </td>
+                        <td>
+                            <div class="row-actions">
+                                {% if employer_mode %}
+                                    <a class="button button-light tiny"
+                                       href="{% url 'dashboard:candidate_detail' application.pk %}">Review {% icon 'arrow' %}</a>
+                                {% else %}
+                                    <a class="button button-light tiny"
+                                       href="{% url 'dashboard:application_detail' application.pk %}">View application</a>
+                                    {% if application.can_edit %}
+                                        <a href="{% url 'dashboard:edit_application' application.pk %}"
+                                           class="button button-light tiny">Edit</a>
+                                    {% endif %}
+                                    {% if application.can_withdraw %}
+                                        <form method="post"
+                                              action="{% url 'dashboard:withdraw_application' application.pk %}"
+                                              data-confirm="Withdraw this application? It will remain in your history and cannot be resubmitted.">
+                                            {% csrf_token %}
+                                            <button type="submit"
+                                                    class="button button-quiet tiny danger">Withdraw</button>
+                                        </form>
+                                    {% endif %}
+                                    {% if application.resume_available %}
+                                        <a class="button button-quiet tiny"
+                                           href="{% url 'dashboard:application_resume' application.pk %}"
+                                           aria-label="Download submitted resume for {{ application.job.title }}">{% icon 'download' %}</a>
+                                    {% endif %}
+                                {% endif %}
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    {% if employer_mode %}
+        {% include "includes/empty.html" with title="Great candidates start with a great opportunity." message="Applications to your jobs will appear here. Publish a role to get started." %}
+    {% else %}
+        {% url 'jobs:job_list' as browse %}
+        {% include "includes/empty.html" with title="Your journey is a blank canvas." message="Find a role that speaks to you, apply and track your progress here." action_url=browse %}
+    {% endif %}
+{% endif %}

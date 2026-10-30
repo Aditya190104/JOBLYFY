@@ -1,0 +1,151 @@
+[
+  {
+    "name": "Ludhiana",
+    "state": "Punjab",
+    "lat": 30.90902,
+    "lon": 75.8516,
+    "aliases": [
+      "Ludhiana"
+    ]
+  },
+  {
+    "name": "Chandigarh",
+    "state": "Chandigarh",
+    "lat": 30.736292,
+    "lon": 76.788398,
+    "aliases": [
+      "Chandigarh"
+    ]
+  },
+  {
+    "name": "Mohali",
+    "state": "Punjab",
+    "lat": 30.72,
+    "lon": 76.7,
+    "aliases": [
+      "Mohali",
+      "SAS Nagar",
+      "S.A.S. Nagar",
+      "Sahibzada Ajit Singh Nagar"
+    ]
+  },
+  {
+    "name": "Delhi",
+    "state": "Delhi",
+    "lat": 28.651952,
+    "lon": 77.231495,
+    "aliases": [
+      "Delhi",
+      "New Delhi",
+      "Dilli",
+      "Delhi NCR"
+    ]
+  },
+  {
+    "name": "Bengaluru",
+    "state": "Karnataka",
+    "lat": 12.97194,
+    "lon": 77.59369,
+    "aliases": [
+      "Bengaluru",
+      "Bangalore"
+    ]
+  },
+  {
+    "name": "Mumbai",
+    "state": "Maharashtra",
+    "lat": 19.072826,
+    "lon": 72.882614,
+    "aliases": [
+      "Mumbai",
+      "Bombay"
+    ]
+  },
+  {
+    "name": "Pune",
+    "state": "Maharashtra",
+    "lat": 18.519574,
+    "lon": 73.855355,
+    "aliases": [
+      "Pune",
+      "Poona"
+    ]
+  },
+  {
+    "name": "Hyderabad",
+    "state": "Telangana",
+    "lat": 17.384052,
+    "lon": 78.456355,
+    "aliases": [
+      "Hyderabad"
+    ]
+  },
+  {
+    "name": "Chennai",
+    "state": "Tamil Nadu",
+    "lat": 13.087839,
+    "lon": 80.278473,
+    "aliases": [
+      "Chennai",
+      "Madras"
+    ]
+  },
+  {
+    "name": "Kolkata",
+    "state": "West Bengal",
+    "lat": 22.562627,
+    "lon": 88.363044,
+    "aliases": [
+      "Kolkata",
+      "Calcutta"
+    ]
+  },
+  {
+    "name": "Jaipur",
+    "state": "Rajasthan",
+    "lat": 26.919621,
+    "lon": 75.787811,
+    "aliases": [
+      "Jaipur"
+    ]
+  },
+  {
+    "name": "Ahmedabad",
+    "state": "Gujarat",
+    "lat": 23.025793,
+    "lon": 72.587265,
+    "aliases": [
+      "Ahmedabad",
+      "Ahmadabad"
+    ]
+  },
+  {
+    "name": "Amritsar",
+    "state": "Punjab",
+    "lat": 31.622337,
+    "lon": 74.875335,
+    "aliases": [
+      "Amritsar"
+    ]
+  },
+  {
+    "name": "Jalandhar",
+    "state": "Punjab",
+    "lat": 31.325556,
+    "lon": 75.579167,
+    "aliases": [
+      "Jalandhar",
+      "Jullundur"
+    ]
+  },
+  {
+    "name": "Dehradun",
+    "state": "Uttarakhand",
+    "lat": 30.324427,
+    "lon": 78.033922,
+    "aliases": [
+      "Dehradun",
+      "Dehra Dun"
+    ]
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "commands": [
+    {
+      "command": "python scripts/configure_env.py",
+      "exit_code": 0,
+      "output": "Created private .env for local development."
+    },
+    {
+      "command": "python manage.py backup_database",
+      "exit_code": 0,
+      "output": "Backup created: /workspace/scratch/69bf9f8c22d3/screening-package-check-2/JOBLYFY/backups/db-20261028-022502-501919.sqlite3"
+    },
+    {
+      "command": "python manage.py migrate --noinput",
+      "exit_code": 0,
+      "output": "Operations to perform:\n  Apply all migrations: accounts, admin, auth, contenttypes, dashboard, jobs, sessions\nRunning migrations:\n  No migrations to apply."
+    },
+    {
+      "command": "python manage.py createcachetable",
+      "exit_code": 0,
+      "output": "Cache table 'joblyfy_cache' already exists."
+    },
+    {
+      "command": "python manage.py seed_categories",
+      "exit_code": 0,
+      "output": "Added 0 categories; no job or account records created."
+    },
+    {
+      "command": "python manage.py check",
+      "exit_code": 0,
+      "output": "System check identified no issues (0 silenced)."
+    },
+    {
+      "command": "python manage.py makemigrations --check --dry-run",
+      "exit_code": 0,
+      "output": "No changes detected"
+    },
+    {
+      "command": "python manage.py migrate --check",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": "python manage.py migrate --noinput",
+      "exit_code": 0,
+      "output": "Operations to perform:\n  Apply all migrations: accounts, admin, auth, contenttypes, dashboard, jobs, sessions\nRunning migrations:\n  Applying contenttypes.0001_initial... OK\n  Applying contenttypes.0002_remove_content_type_name... OK\n  Applying auth.0001_initial... OK\n  Applying auth.0002_alter_permission_name_max_length... OK\n  Applying auth.0003_alter_user_email_max_length... OK\n  Applying auth.0004_alter_user_username_opts... OK\n  Applying auth.0005_alter_user_last_login_null... OK\n  Applying auth.0006_require_contenttypes_0002... OK\n  Applying auth.0007_alter_validators_add_error_messages... OK\n  Applying auth.0008_alter_user_username_max_length... OK\n  Applying auth.0009_alter_user_last_name_max_length... OK\n  Applying auth.0010_alter_group_name_max_length... OK\n  Applying auth.0011_update_proxy_permissions... OK\n  Applying auth.0012_alter_user_first_name_max_length... OK\n  Applying accounts.0001_initial... OK\n  Applying accounts.0002_add_employer_fields... OK\n  Applying accounts.0003_jobseeker_bio_jobseeker_headline_jobseeker_location_and_more... OK\n  Applying accounts.0004_employer_is_demo_jobpreference... OK\n  Applying admin.0001_initial... OK\n  Applying admin.0002_logentry_remove_auto_add... OK\n  Applying admin.0003_logentry_add_action_flag_choices... OK\n  Applying jobs.0001_initial... OK\n  Applying jobs.0002_job_experience_level... OK\n  Applying jobs.0003_savedjob_alter_application_options_alter_job_options_and_more... OK\n  Applying jobs.0004_companyreview_job_demo_key_job_is_demo_and_more... OK\n  Applying dashboard.0001_initial... OK\n  Applying jobs.0005_job_screening_workflow... OK\n  Applying sessions.0001_initial... OK"
+    },
+    {
+      "command": "python manage.py createcachetable",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": "python manage.py seed_categories",
+      "exit_code": 0,
+      "output": "Added 8 categories; no job or account records created."
+    },
+    {
+      "command": "python manage.py check",
+      "exit_code": 0,
+      "output": "System check identified no issues (0 silenced)."
+    },
+    {
+      "command": "python manage.py migrate --check",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "bundled_database": {
+    "accounts_customuser": 6,
+    "accounts_jobseeker": 4,
+    "accounts_employer": 2,
+    "jobs_category": 8,
+    "jobs_job": 0,
+    "jobs_application": 0
+  },
+  "fresh_database": {
+    "public_routes": {
+      "/": 200,
+      "/jobs/": 200,
+      "/companies/": 200,
+      "/categories/": 200,
+      "/about/": 200,
+      "/accounts/login/": 200,
+      "/accounts/signup/": 200,
+      "/accounts/signup/employer/": 200,
+      "/accounts/signup/jobseeker/": 200,
+      "/accounts/password_reset/": 200
+    },
+    "job_create": true,
+    "eligibility": true,
+    "questions": true,
+    "resume_review_submit": true,
+    "stored_answer": true,
+    "private_resume": true,
+    "candidate_receipt": true,
+    "recruiter_review": true,
+    "users": 2,
+    "applications": 1,
+    "drafts_after_submit": 0
+  },
+  "source_hashes_unchanged": true
+}

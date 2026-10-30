@@ -1,0 +1,20 @@
+{% extends 'accounts/auth_base.html' %}
+{% load joblyfy %}
+{% block title %}Create an account — JOBLYFY{% endblock %}
+{% block auth_content %}
+    <a class="back-link" href="{% url 'accounts:signup' %}">← Choose account type</a>
+    <p class="eyebrow">JOIN AS A HIRING TEAM</p>
+    <h1>Build something great.</h1>
+    <p class="muted intro">Create your employer account and introduce your company.</p>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-grid">{% include 'includes/fields.html' %}</div>
+        <button class="button full" type="submit">Create account {% icon 'arrow' %}</button>
+        <p class="help">
+            See <a href="{% url 'jobs:about' %}#privacy">how your information is used</a>.
+        </p>
+    </form>
+    <p class="auth-switch">
+        Already have an account? <a href="{% url 'accounts:login' %}">Log in</a>
+    </p>
+{% endblock %}

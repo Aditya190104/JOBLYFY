@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load joblyfy %}
+{% block title %}About JOBLYFY{% endblock %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container narrow">
+            <p class="eyebrow">GOOD WORK. HUMAN CONNECTIONS.</p>
+            <h1>
+                For everything
+                <br>
+                you could become.
+            </h1>
+            <p>JOBLYFY brings your job search and hiring journey into one clear, connected place.</p>
+        </div>
+    </section>
+    <section class="section container narrow prose">
+        <h2>A space for your next chapter.</h2>
+        <p>
+            Discover roles, learn about companies, save your favourites and apply with your story. For employers, JOBLYFY brings job posts and candidate reviews together in a focused workspace.
+        </p>
+        <h2>Clear information, useful tools.</h2>
+        <p>
+            Job listings and company profiles are submitted by registered employers. Local development samples are clearly labelled. Career samples support practice applications in local development only; no real employer receives them. Counts on this site come from the current database; homepage listing counts show how many are samples. Company counts and salary insights exclude fictional employers. JOBLYFY does not guarantee employment or independently verify company claims.
+        </p>
+        <h2 id="privacy">Your information, with purpose.</h2>
+        <p>
+            Your profile and submitted resume are accessible to employers whose jobs you apply for. Resumes are not listed in the public company directory or served through public media URLs. Withdrawing an application removes the employer’s access to its resume through this platform; a copy already downloaded cannot be recalled.
+        </p>
+        <p>
+            Account information, application history and uploaded files are stored by the operator of this installation. Contact that operator for corrections or deletion. The software does not include advertising trackers.
+        </p>
+        <p>
+            Eligibility answers are self-reported and compared with the employer's stated rules; a match is not a verified qualification or hiring decision. Unsubmitted application drafts and draft resumes are private to your account and can be discarded. On submission, your answers, resume and the job requirements used for the check are saved for you and the authorized employer to review. Later job edits do not rewrite that record.
+        </p>
+        <h2>Location and company insights.</h2>
+        <p>
+            City suggestions work from a small offline catalog and employer-entered locations. Nearby distances use approximate city centers or employer-supplied coordinates, not driving routes. Current location is requested only when you choose it; precise coordinates stay in your browser. Recent searches are saved on this device and can be cleared in the search controls.
+        </p>
+        <p>
+            Company reviews are user-submitted, moderated, and based on self-reported experience. Author names are not displayed publicly. Salary insights describe employer-advertised annual INR ranges from open, non-sample jobs; they are not market estimates.
+        </p>
+        <p>
+            Workplace maps connect to OpenStreetMap only after you choose to load a map. City data credits: <a href="https://www.geonames.org/about.html"
+    rel="noopener noreferrer"
+    target="_blank">GeoNames</a> and <a href="https://wiki.openstreetmap.org/wiki/Main_Page"
+    rel="noopener noreferrer"
+    target="_blank">OpenStreetMap Wiki contributors</a>. The project documentation includes the catalog sources and licences.
+        </p>
+        <h2>Need help getting back in?</h2>
+        <p>
+            Use password reset to recover your account. Local development installations display the reset email in the server terminal until outgoing email is configured.
+        </p>
+        <a class="button" href="{% url 'accounts:password_reset' %}">Reset your password {% icon 'arrow' %}</a>
+    </section>
+{% endblock %}

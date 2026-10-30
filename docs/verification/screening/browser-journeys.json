@@ -1,0 +1,460 @@
+{
+  "journeys": [
+    "Employer registration",
+    "Structured draft job and configurable blocking criteria",
+    "Four question types, rule configuration and reorder",
+    "Publishing and complete JD display",
+    "Candidate registration with profile PDF",
+    "Missing eligibility information remains unknown",
+    "Correct answers and rerun; preferred skills stay advisory",
+    "Blocking question stops submission; corrected answer continues",
+    "Resume upload, private draft download and review",
+    "Submission saves answers, evidence and a pending application",
+    "Duplicate prevention and existing cover-letter editing",
+    "Recruiter screening filter, candidate answers and shortlist update",
+    "Pause, reopen, edit JD and close without rewriting evidence",
+    "Candidate status tracking, notification and withdrawal",
+    "Question editor works without JavaScript"
+  ],
+  "layouts": [
+    {
+      "name": "structured-job-editor",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "structured-job-editor",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "structured-job-editor",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "structured-job-editor",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "structured-job-editor",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "question-editor",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "question-editor",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "question-editor",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "question-editor",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "question-editor",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "manage-jobs",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "manage-jobs",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "manage-jobs",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "manage-jobs",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "manage-jobs",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "job-detail",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "job-detail",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "job-detail",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "job-detail",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "job-detail",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "incomplete-eligibility",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "incomplete-eligibility",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "incomplete-eligibility",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "incomplete-eligibility",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "incomplete-eligibility",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "eligible-preferred-missing",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "eligible-preferred-missing",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "eligible-preferred-missing",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "eligible-preferred-missing",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "eligible-preferred-missing",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "screening-blocked",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "screening-blocked",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "screening-blocked",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "screening-blocked",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "screening-blocked",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "resume-selection",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "resume-selection",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "resume-selection",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "resume-selection",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "resume-selection",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "review",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "review",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "review",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "review",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "review",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "candidate-receipt",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "candidate-receipt",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "candidate-receipt",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "candidate-receipt",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "candidate-receipt",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    }
+  ],
+  "accessibility": [
+    {
+      "name": "structured-job-editor",
+      "violations": []
+    },
+    {
+      "name": "question-editor",
+      "violations": []
+    },
+    {
+      "name": "manage-jobs",
+      "violations": []
+    },
+    {
+      "name": "job-detail",
+      "violations": []
+    },
+    {
+      "name": "incomplete-eligibility",
+      "violations": []
+    },
+    {
+      "name": "eligible-preferred-missing",
+      "violations": []
+    },
+    {
+      "name": "screening-blocked",
+      "violations": []
+    },
+    {
+      "name": "resume-selection",
+      "violations": []
+    },
+    {
+      "name": "review",
+      "violations": []
+    },
+    {
+      "name": "candidate-receipt",
+      "violations": []
+    },
+    {
+      "name": "recruiter-review",
+      "violations": []
+    }
+  ],
+  "console_errors": [],
+  "http_errors": [],
+  "expected_validation_responses": [
+    {
+      "url": "/jobs/1/application/",
+      "status": 400
+    }
+  ]
+}

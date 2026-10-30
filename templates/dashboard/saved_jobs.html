@@ -1,0 +1,38 @@
+{% extends 'dashboard/base.html' %}
+{% load joblyfy %}
+{% block title %}Saved jobs — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">KEEP THE POSSIBILITIES CLOSE</p>
+            <h1>On your shortlist.</h1>
+            <p>
+                {{ page_obj.paginator.count }} saved opportunit{{ page_obj.paginator.count|pluralize:'y,ies' }}. Come back when you’re ready.
+            </p>
+        </div>
+        <a class="button" href="{% url 'jobs:job_list' %}">Find more jobs {% icon 'arrow' %}</a>
+    </header>
+    <div class="job-grid">
+        {% for saved in saved_jobs %}
+            <div>
+                {% if saved.job.is_active %}
+                    {% include 'jobs/includes/job_card.html' with job=saved.job %}
+                {% else %}
+                    <article class="job-card">
+                        <h3>{{ saved.job.title }}</h3>
+                        <p>{{ saved.job.employer.company_name }}</p>
+                        <span class="status status-withdrawn">No longer listed</span></article>
+                {% endif %}
+                <form class="saved-remove"
+                      method="post"
+                      action="{% url 'jobs:save_job' saved.job.pk %}">
+                    {% csrf_token %}
+                    <button class="button button-quiet tiny" type="submit">{% icon 'bookmark' %}Remove from saved</button>
+                </form>
+            </div>
+        {% empty %}{% url 'jobs:job_list' as browse %}
+            {% include 'includes/empty.html' with title='Keep your favourites close.' message='Save interesting jobs as you browse. You can come back to them here.' action_url=browse %}
+        {% endfor %}
+    </div>
+    {% include 'jobs/includes/pagination.html' %}
+{% endblock %}

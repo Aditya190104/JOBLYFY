@@ -1,0 +1,28 @@
+{% load joblyfy %}
+<section class="panel application-insights" aria-labelledby="application-insights-title">
+    <div class="section-heading compact">
+        <div>
+            <p class="eyebrow">YOUR APPLICATION PICTURE</p>
+            <h2 id="application-insights-title">Every next step, in view.</h2>
+            <p>Current status across all {{ stats.total }} application{{ stats.total|pluralize }}.</p>
+        </div>
+        <span class="insights-total"><strong>{{ stats.total }}</strong><span>Total</span></span>
+    </div>
+    {% if stats.total %}
+        <ul class="status-chart" aria-label="Applications by current status">
+            {% for row in status_distribution %}
+                <li class="chart-row chart-{{ row.status }}">
+                    <span class="chart-label"><span class="chart-dot" aria-hidden="true"></span>{% if row.status != 'other' %}<a href="{% if user.is_employer %}{% url 'dashboard:employer_applications' %}{% else %}{% url 'dashboard:applications' %}{% endif %}?status={{ row.status }}">{{ row.label }}</a>{% else %}{{ row.label }}{% endif %}</span>
+                    <span class="chart-value"><strong>{{ row.count }}</strong><small>{{ row.percent|floatformat:'0' }}%</small></span>
+                    <svg class="chart-track" viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true" focusable="false"><rect class="chart-rail" width="100" height="6" rx="3"></rect><rect class="chart-bar" data-chart-bar width="{{ row.percent|floatformat:'2u' }}" height="6" rx="3"></rect></svg>
+                </li>
+            {% endfor %}
+        </ul>
+        <p class="help chart-caption">Each application appears once, at its current status. This is not a conversion rate. Practice applications are included where present.</p>
+    {% else %}
+        <div class="insights-empty">
+            <span class="stat-icon">{% icon 'file' %}</span>
+            <div><h3>A clear picture starts with one application.</h3><p>{% if user.is_employer %}When candidates apply to your roles, their current statuses will appear here.{% else %}Once you apply, you can see how your applications are progressing here.{% endif %}</p></div>
+        </div>
+    {% endif %}
+</section>

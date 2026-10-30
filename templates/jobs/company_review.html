@@ -1,0 +1,23 @@
+{% extends 'dashboard/base.html' %}
+{% load joblyfy %}
+{% block title %}Review {{ company.company_name }} — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <a class="back-link" href="{{ company.get_absolute_url }}#reviews">← Company profile</a>
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">YOUR EXPERIENCE, THOUGHTFULLY SHARED</p>
+            <h1>Review {{ company.company_name }}</h1>
+            <p>Help the next person make a more informed choice.</p>
+        </div>
+    </header>
+    <section class="panel narrow-panel">
+        <p>
+            Write about your own experience. Your name and profile are not shown publicly. A moderator can see your account, and all submissions are reviewed before publication.
+        </p>
+        <form method="post">
+            {% csrf_token %}
+            {% include 'includes/fields.html' %}
+            <button class="button" type="submit">Submit for moderation {% icon 'arrow' %}</button>
+        </form>
+    </section>
+{% endblock %}

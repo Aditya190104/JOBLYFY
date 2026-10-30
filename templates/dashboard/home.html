@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="section container narrow panel">
+        <h1>Welcome to JOBLYFY</h1>
+        <p>
+            This account does not have a job seeker or employer profile. Contact the administrator to assign the correct role.
+        </p>
+        {% if user.is_staff %}
+            <a class="button" href="{% url 'admin:index' %}">Open administration</a>
+        {% endif %}
+    </section>
+{% endblock %}

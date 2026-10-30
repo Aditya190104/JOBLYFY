@@ -1,0 +1,37 @@
+{% extends 'dashboard/base.html' %}
+{% load joblyfy %}
+{% block title %}Company profile — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">GIVE YOUR TEAM A VOICE</p>
+            <h1>This is your company’s story.</h1>
+            <p>Help future candidates get to know the people behind the opportunity.</p>
+        </div>
+        <a class="button button-light" href="{{ profile.get_absolute_url }}">View public profile {% icon 'arrow' %}</a>
+    </header>
+    <div class="profile-layout">
+        <aside class="panel profile-summary">
+            {% include 'includes/company_logo.html' with company=profile large=True %}
+            <h2>{{ profile.company_name }}</h2>
+            <p>{{ profile.industry|default:'Tell candidates what you do' }}</p>
+            <span class="muted">{{ profile.location }}</span>
+            <hr>
+            <span class="eyebrow">OPEN OPPORTUNITIES</span><strong>{{ profile.job_count }}</strong>
+            <p class="help">
+                Your description, website, location and industry appear on your public company page. Account email is private.
+            </p>
+        </aside>
+        <section class="panel">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h2>Account information</h2>
+                <div class="form-grid">{% include 'includes/fields.html' with form=user_form %}</div>
+                <hr>
+                <h2>Company information</h2>
+                <div class="form-grid">{% include 'includes/fields.html' %}</div>
+                <button class="button" type="submit">Save company profile {% icon 'check' %}</button>
+            </form>
+        </section>
+    </div>
+{% endblock %}

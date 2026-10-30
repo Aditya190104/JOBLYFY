@@ -1,0 +1,30 @@
+[
+  {
+    "collision": "email",
+    "outcomes": [
+      {
+        "result": "created"
+      },
+      {
+        "result": "rejected",
+        "fields": [
+          "email"
+        ]
+      }
+    ]
+  },
+  {
+    "collision": "username",
+    "outcomes": [
+      {
+        "result": "created"
+      },
+      {
+        "result": "rejected",
+        "fields": [
+          "username"
+        ]
+      }
+    ]
+  }
+]

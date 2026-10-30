@@ -1,0 +1,448 @@
+{
+  "journeys": [
+    "Featured/recent database listings and honest sample counts",
+    "Autocomplete and keyword/location search",
+    "18 details, 15 categories, 8 locations",
+    "Pagination and sorting",
+    "Mobile remote filter",
+    "Correct empty search state",
+    "Candidate signup",
+    "Eligibility, 4 questions, private PDF, review and saved receipt",
+    "Recruiter review, private download and status update",
+    "Candidate status tracking"
+  ],
+  "details": [
+    18,
+    17,
+    16,
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "categories": [
+    {
+      "category": 16,
+      "count": 2
+    },
+    {
+      "category": 15,
+      "count": 2
+    },
+    {
+      "category": 10,
+      "count": 2
+    },
+    {
+      "category": 23,
+      "count": 1
+    },
+    {
+      "category": 22,
+      "count": 1
+    },
+    {
+      "category": 21,
+      "count": 1
+    },
+    {
+      "category": 20,
+      "count": 1
+    },
+    {
+      "category": 19,
+      "count": 1
+    },
+    {
+      "category": 18,
+      "count": 1
+    },
+    {
+      "category": 17,
+      "count": 1
+    },
+    {
+      "category": 14,
+      "count": 1
+    },
+    {
+      "category": 13,
+      "count": 1
+    },
+    {
+      "category": 12,
+      "count": 1
+    },
+    {
+      "category": 11,
+      "count": 1
+    },
+    {
+      "category": 9,
+      "count": 1
+    }
+  ],
+  "locations": [
+    {
+      "location": "Remote — India",
+      "count": 3
+    },
+    {
+      "location": "Delhi NCR",
+      "count": 2
+    },
+    {
+      "location": "Mohali, Punjab",
+      "count": 3
+    },
+    {
+      "location": "Hyderabad, Telangana",
+      "count": 2
+    },
+    {
+      "location": "Chandigarh",
+      "count": 2
+    },
+    {
+      "location": "Pune, Maharashtra",
+      "count": 2
+    },
+    {
+      "location": "Bengaluru, Karnataka",
+      "count": 2
+    },
+    {
+      "location": "Ludhiana, Punjab",
+      "count": 2
+    }
+  ],
+  "layouts": [
+    {
+      "name": "populated-home",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-home",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-home",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-home",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-home",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-results",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-results",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-results",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-results",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "populated-results",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "remote-mobile-filter",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "remote-mobile-filter",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "remote-mobile-filter",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "remote-mobile-filter",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "remote-mobile-filter",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "sample-detail",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "sample-detail",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "sample-detail",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "sample-detail",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "sample-detail",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-eligibility",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-eligibility",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-eligibility",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-eligibility",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-eligibility",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-review",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-review",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-review",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-review",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-review",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-receipt",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-receipt",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-receipt",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-receipt",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "practice-receipt",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 1440,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 1024,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 768,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 390,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    },
+    {
+      "name": "recruiter-review",
+      "width": 320,
+      "overflow": false,
+      "unlabelled": [],
+      "brokenImages": []
+    }
+  ],
+  "accessibility": [
+    {
+      "name": "populated-home",
+      "violations": []
+    },
+    {
+      "name": "populated-results",
+      "violations": []
+    },
+    {
+      "name": "remote-mobile-filter",
+      "violations": []
+    },
+    {
+      "name": "sample-detail",
+      "violations": []
+    },
+    {
+      "name": "practice-eligibility",
+      "violations": []
+    },
+    {
+      "name": "practice-review",
+      "violations": []
+    },
+    {
+      "name": "practice-receipt",
+      "violations": []
+    },
+    {
+      "name": "recruiter-review",
+      "violations": []
+    }
+  ],
+  "console_errors": [],
+  "http_errors": []
+}

@@ -1,0 +1,23 @@
+{% extends 'dashboard/base.html' %}
+{% load joblyfy %}
+{% block title %}Job preferences — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">A SEARCH THAT FEELS LIKE YOU</p>
+            <h1>What does your next look like?</h1>
+            <p>Your dashboard uses these preferences to find matching open roles.</p>
+        </div>
+        <a class="button button-light" href="{{ results_url }}">See matching jobs {% icon 'arrow' %}</a>
+    </header>
+    <section class="panel narrow-panel">
+        <form method="post">
+            {% csrf_token %}
+            {% include 'includes/fields.html' %}
+            <button class="button" type="submit">Save preferences {% icon 'check' %}</button>
+        </form>
+        <p class="help top-gap">
+            Preferences stay in your account. No automatic emails or external job feeds are enabled. Leave all fields blank to see the newest jobs.
+        </p>
+    </section>
+{% endblock %}

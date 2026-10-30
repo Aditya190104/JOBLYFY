@@ -1,0 +1,10 @@
+{% extends "dashboard/base.html" %}
+{% block title %}Your application — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <a class="back-link" href="{% url 'dashboard:applications' %}">← All applications</a><header class="dashboard-heading"><div><p class="eyebrow">YOUR APPLICATION RECORD</p><h1>{{ application.job_snapshot.title|default:application.job.title }}</h1><p>{{ application.job_snapshot.company|default:application.job.employer.company_name }} · Submitted {{ application.applied_date|date:'d M Y, H:i' }}</p></div><span class="status status-{{ application.status }}">{{ application.get_status_display }}</span></header>
+    <section class="panel"><h2>Your introduction</h2><div class="prose">{{ application.cover_letter|default:'No cover letter added.'|linebreaks }}</div><div class="row-actions">{% if application.resume_available %}<a class="button button-light"
+   href="{% url 'dashboard:application_resume' application.pk %}">Download submitted resume</a>{% endif %}{% if application.can_edit %}<a class="button button-quiet"
+   href="{% url 'dashboard:edit_application' application.pk %}">Edit cover letter</a>{% endif %}{% if application.can_withdraw %}<form method="post"
+      action="{% url 'dashboard:withdraw_application' application.pk %}"
+      data-confirm="Withdraw this application? It remains in your history and cannot be resubmitted.">{% csrf_token %}<button class="button button-quiet danger" type="submit">Withdraw application</button></form>{% endif %}</div><p class="help">Screening answers and eligibility results stay fixed after submission. Status updates appear here and in Notifications.</p></section>{% include "dashboard/includes/screening_evidence.html" %}
+{% endblock %}

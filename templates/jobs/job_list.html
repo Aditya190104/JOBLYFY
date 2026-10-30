@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+{% load joblyfy %}
+{% block title %}Find your next role — JOBLYFY{% endblock %}
+{% block body_class %}search-page{% endblock %}
+{% block content %}
+    <section class="search-heading">
+        <div class="container">
+            <div class="search-heading-copy">
+                <p class="eyebrow">A LITTLE CLOSER TO WHAT’S NEXT</p>
+                <h1>Find work that fits your life.</h1>
+                <p>Good opportunities. Clear details. Your next move.</p>
+            </div>
+            <form id="job-search"
+                  method="get"
+                  action="{% url 'jobs:job_list' %}"
+                  class="search-bar"
+                  role="search"
+                  data-job-search>
+                <div class="search-control">
+                    {% icon 'search' %}
+                    <div>
+                        <label for="{{ form.search.id_for_label }}">What</label>
+                        {{ form.search }}{{ form.search.errors }}
+                    </div>
+                </div>
+                <div class="search-control">
+                    {% icon 'pin' %}
+                    <div>
+                        <label for="{{ form.location.id_for_label }}">Where</label>
+                        {{ form.location }}{{ form.location.errors }}
+                    </div>
+                </div>
+                <button class="button" type="submit">Search jobs {% icon 'arrow' %}</button>
+            </form>
+            <div class="recent-searches"
+                 data-recent-searches
+                 role="group"
+                 aria-label="Recent searches"></div>
+        </div>
+    </section>
+    <div class="container search-workspace">
+        <button class="button button-light filter-trigger"
+                type="button"
+                data-filter-open
+                hidden
+                aria-controls="search-filters"
+                aria-expanded="false">
+            {% icon 'sliders' %}Filters
+            {% if filter_chips %}({{ filter_chips|length }}){% endif %}
+        </button>
+        <div class="filter-backdrop" data-filter-backdrop hidden></div>
+        <aside id="search-filters"
+               class="search-filters panel"
+               aria-labelledby="filter-title">
+            <div class="section-heading compact">
+                <h2 id="filter-title">Find your fit</h2>
+                <button type="button"
+                        class="icon-button filter-close"
+                        data-filter-close
+                        aria-label="Close filters"
+                        hidden>{% icon 'close' %}</button>
+            </div>
+            <p class="help">A few details can make all the difference.</p>
+            {% for field in filter_fields %}
+                {% include 'includes/field.html' %}
+            {% endfor %}
+            <p class="help">
+                Salary filters use overlapping annual INR ranges supplied by employers. Undisclosed salaries are excluded when a salary filter is set.
+            </p>
+            <button class="button full" type="submit" form="job-search">Apply filters</button>
+            <a class="reset-link" href="{% url 'jobs:job_list' %}">Clear all filters</a>
+        </aside>
+        <section class="search-results" aria-labelledby="result-count">
+            <div class="result-toolbar">
+                <div>
+                    <h2 id="result-count">{{ page_obj.paginator.count }} matching job{{ page_obj.paginator.count|pluralize }}</h2>
+                    <p>
+                        Open for applications
+                        {% if sample_mode %}· Includes labelled samples{% endif %}
+                    </p>
+                </div>
+                <div class="sort-control">
+                    <label for="{{ form.sort.id_for_label }}">Sort by</label>
+                    {{ form.sort }}
+                    <button class="text-button" type="submit" form="job-search">Update</button>
+                </div>
+            </div>
+            {% if form.errors %}
+                <div class="form-errors" role="alert">
+                    <strong>Please check your search.</strong>{{ form.non_field_errors }}
+                    {% for field in filter_fields %}
+                        {% if field.errors %}<p>{{ field.label }}: {{ field.errors|striptags }}</p>{% endif %}
+                    {% endfor %}
+                    {{ form.sort.errors }}
+                </div>
+            {% endif %}
+            {% if filter_chips %}
+                <div class="filter-chips" role="group" aria-label="Selected filters">
+                    {% for chip in filter_chips %}
+                        <a href="{{ chip.url }}" aria-label="Remove {{ chip.label }}">{{ chip.label }} {% icon 'close' %}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if radius_search %}
+                <p class="search-note">
+                    Distances are approximate straight-line distances from the selected city center. Jobs without known coordinates or a supported city are excluded.
+                </p>
+            {% endif %}
+            {% if remote_search %}
+                <p class="search-note">
+                    Showing remote roles across locations. Check each employer’s eligible regions; city and distance filters are ignored.
+                </p>
+            {% endif %}
+            <div class="results-and-preview">
+                <div class="results-column">
+                    <div class="job-results">
+                        {% for job in jobs %}
+                            <article class="result-card {% if job.pk == selected_job.pk %}selected{% endif %}"
+                                     data-job-card>
+                                <div class="result-card-company">
+                                    {% include 'includes/company_logo.html' with company=job.employer %}
+                                    <div>
+                                        <a href="{{ job.employer.get_absolute_url }}" class="company-name">{{ job.employer.company_name }}</a><span class="posting-date">{{ job.posted_date|date:'d M Y' }}</span>
+                                    </div>
+                                    {% if user.is_authenticated and user.is_job_seeker %}
+                                        <form method="post"
+                                              action="{% url 'jobs:save_job' job.pk %}"
+                                              class="save-control" data-save-job="{{ job.pk }}" data-job-title="{{ job.title }}">
+                                            {% csrf_token %}
+                                            <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                                            <input type="hidden" name="intent" value="{% if job.pk in saved_ids %}remove{% else %}save{% endif %}">
+                                            <button class="icon-button {% if job.pk in saved_ids %}is-saved{% endif %}"
+                                                    aria-pressed="{% if job.pk in saved_ids %}true{% else %}false{% endif %}"
+                                                    aria-label="{% if job.pk in saved_ids %}Unsave{% else %}Save{% endif %} {{ job.title }}"
+                                                    type="submit">{% icon 'bookmark' %}</button>
+                                        </form>
+                                    {% endif %}
+                                </div>
+                                {% if job.is_demo %}<span class="sample-label">Sample listing · not a real vacancy</span>{% endif %}
+                                <h3>
+                                    <a href="{{ job.get_absolute_url }}" data-job-link>{{ job.title }}</a>
+                                </h3>
+                                <div class="job-meta">
+                                    <span>{% icon 'pin' %}{{ job.location }}</span>
+                                    {% if radius_search %}<span>~{{ job.distance_km|floatformat:0 }} km</span>{% endif %}
+                                </div>
+                                <strong class="result-salary">{{ job.salary_display }}</strong>
+                                <div class="tags">
+                                    <span class="tag">{{ job.get_job_type_display }}</span><span class="tag neutral">{{ job.get_work_mode_display }}</span><span class="tag neutral">{{ job.get_experience_level_display }}</span>
+                                </div>
+                                <p class="job-summary">{{ job.card_description|truncatewords:24 }}</p>
+                                <div class="result-card-bottom">
+                                    <a href="{{ job.get_absolute_url }}">View full role {% icon 'arrow' %}</a><a class="preview-link"
+   href="{% querystring selected=job.pk %}#job-preview"
+   {% if job.pk == selected_job.pk %}aria-current="true"{% endif %}>Quick view</a>
+                                </div>
+                            </article>
+                        {% empty %}
+                            {% url 'jobs:job_list' as browse %}
+                            {% include 'includes/empty.html' with title='No matching opportunities yet.' message='Try fewer keywords, a nearby city, or Remote. Clear a salary filter to include roles with undisclosed pay.' action_url=browse action_label='Explore all jobs' %}
+                            {% if not filter_chips %}
+                                <p class="help empty-explanation">
+                                    Jobs appear when employers publish them. For a local portfolio preview, follow the optional demo-data step in the README.
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% include 'jobs/includes/pagination.html' %}
+                </div>
+                {% if selected_job %}
+                    <aside class="job-preview panel"
+                           id="job-preview"
+                           aria-label="Selected job preview"
+                           tabindex="-1">
+                        <p class="eyebrow">A CLOSER LOOK</p>
+                        {% include 'includes/company_logo.html' with company=selected_job.employer large=True %}
+                        {% if selected_job.is_demo %}<p class="sample-label">Sample listing · {% if selected_job.accepts_demo_applications %}local practice applications{% else %}applications disabled{% endif %}</p>{% endif %}
+                        <h2>{{ selected_job.title }}</h2>
+                        <a href="{{ selected_job.employer.get_absolute_url }}">{{ selected_job.employer.company_name }}</a>
+                        <p class="muted">{{ selected_job.location }} · {{ selected_job.get_work_mode_display }}</p>
+                        <strong class="preview-salary">{{ selected_job.salary_display }}</strong>
+                        <a class="button full" href="{{ selected_job.get_absolute_url }}">
+                            {% if selected_job.is_demo %}
+                                View sample role
+                            {% else %}
+                                View role &amp; apply
+                            {% endif %}
+                        {% icon 'arrow' %}</a>
+                        <dl class="preview-facts">
+                            <div>
+                                <dt>Job type</dt>
+                                <dd>
+                                    {{ selected_job.get_job_type_display }}
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Experience</dt>
+                                <dd>
+                                    {{ selected_job.get_experience_level_display }}
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Apply by</dt>
+                                <dd>
+                                    {{ selected_job.deadline|date:'d M Y'|default:'Until closed' }}
+                                </dd>
+                            </div>
+                        </dl>
+                        <h3>The opportunity</h3>
+                        <div class="prose">{{ selected_job.card_description|truncatewords:90|linebreaks }}</div>
+                        <h3>What you bring</h3>
+                        <div class="prose">{{ selected_job.requirements|truncatewords:65|linebreaks }}</div>
+                    </aside>
+                {% endif %}
+            </div>
+        </section>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/",
+    "violations": []
+  },
+  {
+    "path": "/jobs/",
+    "violations": []
+  },
+  {
+    "path": "/jobs/1/",
+    "violations": []
+  },
+  {
+    "path": "/accounts/login/",
+    "violations": []
+  },
+  {
+    "path": "/accounts/signup/jobseeker/",
+    "violations": []
+  },
+  {
+    "path": "/companies/1/",
+    "violations": []
+  },
+  {
+    "path": "/dashboard/jobseeker/",
+    "violations": []
+  },
+  {
+    "path": "/accounts/profile/",
+    "violations": []
+  },
+  {
+    "path": "/dashboard/applications/",
+    "violations": []
+  }
+]

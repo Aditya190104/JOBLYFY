@@ -1,0 +1,33 @@
+{% load static joblyfy %}
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a class="brand" href="{% url 'jobs:home' %}" aria-label="JOBLYFY home">
+            <img src="{% static 'images/brand.svg' %}" width="34" height="34" alt="">
+            <span>JOBLYFY<span class="brand-dot">.</span></span></a>
+        <button type="button"
+                class="menu-toggle icon-button"
+                aria-controls="main-navigation"
+                aria-expanded="false"
+                aria-label="Open navigation">{% icon 'menu' %}</button>
+        <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="{% url 'jobs:job_list' %}"
+                   {% if request.resolver_match.url_name == 'job_list' or request.resolver_match.url_name == 'job_detail' or request.resolver_match.url_name == 'application_start' %}aria-current="page"{% endif %}>Find a job</a><a href="{% url 'jobs:companies' %}"
+   {% if request.resolver_match.url_name == 'companies' or request.resolver_match.url_name == 'company_detail' %}aria-current="page"{% endif %}>Companies</a><a href="{% url 'jobs:categories' %}"
+   {% if request.resolver_match.url_name == 'categories' or request.resolver_match.url_name == 'category_detail' %}aria-current="page"{% endif %}>Categories</a><a href="{% url 'jobs:about' %}" {% if request.resolver_match.url_name == 'about' %}aria-current="page"{% endif %}>About us</a>
+            </div>
+            <div class="nav-actions">
+                {% if user.is_authenticated %}
+                    <a class="header-notifications icon-button" href="{% url 'dashboard:notifications' %}" aria-label="Updates{% if unread_notifications %}, {{ unread_notifications }} unread{% endif %}">{% icon 'bell' %}{% if unread_notifications %}<span class="notification-dot" aria-hidden="true"></span>{% endif %}</a>
+                    <a class="nav-account" href="{% url 'dashboard:home' %}"><span class="avatar small">{{ user.initials }}</span><span>My dashboard</span></a>
+                    <form method="post" action="{% url 'accounts:logout' %}">
+                        {% csrf_token %}
+                        <button class="button button-quiet small" type="submit">Sign out</button>
+                    </form>
+                {% else %}
+                    <a class="nav-login" href="{% url 'accounts:login' %}">Log in</a><a class="button small" href="{% url 'accounts:signup' %}">Get started {% icon 'arrow' %}</a>
+                {% endif %}
+            </div>
+        </nav>
+    </div>
+</header>

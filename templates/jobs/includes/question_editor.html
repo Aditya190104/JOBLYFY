@@ -1,0 +1,7 @@
+<section class="panel question-editor" data-question-row><div class="question-heading"><h2>{% if question_form.instance.pk %}Question {{ question_form.instance.position }}{% else %}New question{% endif %}</h2><div class="row-actions js-only"><button class="button button-quiet tiny"
+        type="button"
+        data-question-up
+        aria-label="Move question up">↑ Move up</button><button class="button button-quiet tiny"
+        type="button"
+        data-question-down
+        aria-label="Move question down">↓ Move down</button></div></div>{% if question_form.non_field_errors %}<div class="form-errors" role="alert">{{ question_form.non_field_errors }}</div>{% endif %}{{ question_form.id }}{{ question_form.job }}{% include "includes/field.html" with field=question_form.prompt %}<div class="form-grid">{% include "includes/field.html" with field=question_form.kind %}{% include "includes/field.html" with field=question_form.position %}{% include "includes/field.html" with field=question_form.options %}{% include "includes/field.html" with field=question_form.match_mode %}{% include "includes/field.html" with field=question_form.expected_answers %}</div>{% include "includes/field.html" with field=question_form.required %}{% include "includes/field.html" with field=question_form.is_blocking %}{% include "includes/field.html" with field=question_form.DELETE %}</section>

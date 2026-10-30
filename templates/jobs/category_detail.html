@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}{{ category.name }} jobs — JOBLYFY{% endblock %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container">
+            <a class="back-link" href="{% url 'jobs:categories' %}">← All categories</a>
+            <h1>{{ category.name }}</h1>
+            <p>{{ page_obj.paginator.count }} open opportunit{{ page_obj.paginator.count|pluralize:'y,ies' }} in this category.</p>
+        </div>
+    </section>
+    <section class="container section">
+        <div class="job-grid">
+            {% for job in jobs %}
+                {% include 'jobs/includes/job_card.html' %}
+            {% empty %}
+                {% include 'includes/empty.html' with title='A new opportunity could be next.' message='There are no open jobs in this category right now. Check other categories to explore more.' %}
+            {% endfor %}
+        </div>
+        {% include 'jobs/includes/pagination.html' %}
+    </section>
+{% endblock %}

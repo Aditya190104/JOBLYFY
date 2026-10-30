@@ -1,0 +1,46 @@
+{% extends 'dashboard/base.html' %}
+{% load joblyfy %}
+{% block title %}My profile — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">YOUR STORY STARTS WITH YOU</p>
+            <h1>Make a great introduction.</h1>
+            <p>Give employers a clear picture of what you bring.</p>
+        </div>
+    </header>
+    <div class="profile-layout">
+        <aside class="panel profile-summary">
+            <span class="avatar jumbo">{{ user.initials }}</span>
+            <h2>{{ user.display_name }}</h2>
+            <p>{{ profile.headline|default:'Your next chapter awaits' }}</p>
+            {% if profile.location %}
+                <span class="muted">{% icon 'pin' %}{{ profile.location }}</span>
+            {% endif %}
+            <hr>
+            <span class="eyebrow">PROFILE COMPLETENESS</span><strong>{{ profile.completeness }}%</strong><progress max="100"
+          value="{{ profile.completeness }}"
+          aria-label="Profile completeness"></progress>
+            {% if profile.resume_available %}
+                <a class="button button-light full top-gap"
+                   href="{% url 'accounts:own_resume' %}">{% icon 'download' %}Your resume</a>
+            {% else %}
+                <p class="help">Add your resume so you’re ready to apply.</p>
+            {% endif %}
+            <div class="tags top-gap">
+                {% for skill in profile.skill_list %}<span class="tag neutral">{{ skill }}</span>{% endfor %}
+            </div>
+        </aside>
+        <section class="panel">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h2>Personal information</h2>
+                <div class="form-grid">{% include 'includes/fields.html' with form=user_form %}</div>
+                <hr>
+                <h2>Your career story</h2>
+                <div class="form-grid">{% include 'includes/fields.html' %}</div>
+                <button class="button" type="submit">Save profile {% icon 'check' %}</button>
+            </form>
+        </section>
+    </div>
+{% endblock %}

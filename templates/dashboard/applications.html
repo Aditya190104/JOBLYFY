@@ -1,0 +1,41 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Applications — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">
+                {% if employer_mode %}
+                    MEET YOUR FUTURE TEAM
+                {% else %}
+                    EVERY STEP, IN ONE PLACE
+                {% endif %}
+            </p>
+            <h1>
+                {% if employer_mode %}
+                    Your candidate pipeline.
+                {% else %}
+                    Your applications.
+                {% endif %}
+            </h1>
+            <p>
+                {% if employer_mode %}
+                    Review people, see their experience and keep them up to date.
+                {% else %}
+                    A clear view of where you are and what comes next.
+                {% endif %}
+            </p>
+        </div>
+    </header>
+    <section class="panel">
+        <form method="get" class="inline-filters">
+            {% include 'includes/fields.html' %}
+            <button class="button small" type="submit">Apply filters</button>
+            <a class="text-link" href="{{ request.path }}">Reset</a>
+        </form>
+        <div class="result-toolbar">
+            <h2>{{ page_obj.paginator.count }} application{{ page_obj.paginator.count|pluralize }}</h2>
+        </div>
+        {% include 'dashboard/includes/application_table.html' %}
+        {% include 'jobs/includes/pagination.html' %}
+    </section>
+{% endblock %}

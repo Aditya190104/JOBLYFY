@@ -1,0 +1,20 @@
+{% load joblyfy %}
+<article class="company-card">
+    {% include 'includes/company_logo.html' %}
+    {% if company.is_demo %}<span class="sample-label">Fictional sample company</span>{% endif %}
+    <h3>
+        <a href="{{ company.get_absolute_url }}">{{ company.company_name }}</a>
+    </h3>
+    <p>{{ company.industry|default:'Company on JOBLYFY' }}</p>
+    {% if company.location %}<span class="muted">{{ company.location }}</span>{% endif %}
+    {% if company.review_count %}
+        <p class="company-rating">
+            {{ company.average_rating|floatformat:1 }} / 5 · {{ company.review_count }} published review{{ company.review_count|pluralize }}
+        </p>
+    {% endif %}
+    <div class="company-card-bottom">
+        <span class="tag">{{ company.open_count }} open role{{ company.open_count|pluralize }}</span><a href="{{ company.get_absolute_url }}"
+   class="circle-link"
+   aria-label="About {{ company.company_name }}">{% icon 'arrow' %}</a>
+    </div>
+</article>

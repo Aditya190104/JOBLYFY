@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load joblyfy %}
+{% block title %}Find your next chapter — JOBLYFY{% endblock %}
+{% block content %}
+    <section class="container signup-choice">
+        <p class="eyebrow">GOOD THINGS START HERE</p>
+        <h1>What’s your next move?</h1>
+        <p class="muted">Two different journeys. A world of possibility.</p>
+        <div class="role-grid">
+            <a class="role-card" href="{% url 'accounts:jobseeker_signup' %}"><span class="role-art">{% icon 'user' %}<span>↗</span></span><span class="eyebrow">FOR JOB SEEKERS</span>
+                <h2>Find where you belong.</h2>
+                <p>Explore opportunities, tell your story and make your next career move.</p>
+                <span class="button">Find my next role {% icon 'arrow' %}</span></a><a class="role-card employer"
+   href="{% url 'accounts:employer_signup' %}"><span class="role-art">{% icon 'building' %}<span>+</span></span><span class="eyebrow">FOR EMPLOYERS</span>
+                <h2>Find your next great hire.</h2>
+                <p>Share opportunities, meet candidates and build your team.</p>
+                <span class="button button-dark">Build my team {% icon 'arrow' %}</span></a>
+        </div>
+        <p class="auth-switch">
+            Already have an account? <a href="{% url 'accounts:login' %}">Log in</a>
+        </p>
+    </section>
+{% endblock %}

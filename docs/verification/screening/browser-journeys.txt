@@ -1,0 +1,16 @@
+Employer registration
+Structured draft job and configurable blocking criteria
+Four question types, rule configuration and reorder
+Publishing and complete JD display
+Candidate registration with profile PDF
+Missing eligibility information remains unknown
+Correct answers and rerun; preferred skills stay advisory
+Blocking question stops submission; corrected answer continues
+Resume upload, private draft download and review
+Submission saves answers, evidence and a pending application
+Duplicate prevention and existing cover-letter editing
+Recruiter screening filter, candidate answers and shortlist update
+Pause, reopen, edit JD and close without rewriting evidence
+Candidate status tracking, notification and withdrawal
+Question editor works without JavaScript
+{"journeys":15,"layouts":55,"accessibility":11}

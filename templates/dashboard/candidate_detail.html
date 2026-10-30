@@ -1,0 +1,73 @@
+{% extends "dashboard/base.html" %}
+{% load joblyfy %}
+{% block title %}Review application — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <a class="back-link" href="{% url 'dashboard:employer_applications' %}">← All applications</a>
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">THE PERSON BEHIND THE APPLICATION</p>
+            <h1>{{ candidate.user.display_name }}</h1>
+            <p>Applied for {{ application.job.title }} on {{ application.applied_date|date:'d M Y' }}</p>
+        </div>
+        <span class="status status-{{ application.status }}">{{ application.get_status_display }}</span>
+    </header>
+    <div class="detail-layout">
+        <div>
+            <section class="panel prose">
+                <h2>{{ candidate.headline|default:'Candidate profile' }}</h2>
+                {% if application.status == "withdrawn" %}
+                    <div class="notice warning">The candidate withdrew this application. Resume access has been closed.</div>
+                {% endif %}
+                <p class="muted">
+                    {{ candidate.location }}
+                    {% if candidate.location %}·{% endif %}
+                    {{ candidate.user.email }}
+                </p>
+                {{ candidate.bio|linebreaks }}
+                <h3>Skills</h3>
+                <div class="tags">
+                    {% for skill in candidate.skill_list %}
+                        <span class="tag">{{ skill }}</span>{% empty %}
+                        <p>Not provided.</p>
+                    {% endfor %}
+                </div>
+                <h3>Experience</h3>
+                {{ candidate.experience|default:'Not provided.'|linebreaks }}
+                <h3>Education</h3>
+                {{ candidate.education|default:'Not provided.'|linebreaks }}
+                {% if candidate.phone %}
+                    <h3>Contact phone</h3>
+                    <p>{{ candidate.phone }}</p>
+                {% endif %}
+            </section>
+            {% include "dashboard/includes/screening_evidence.html" %}
+            <section class="panel prose">
+                <h2>Cover letter</h2>
+                {{ application.cover_letter|default:'The candidate did not include a cover letter.'|linebreaks }}
+            </section>
+        </div>
+        <aside>
+            <section class="panel">
+                <h2>Keep the conversation moving.</h2>
+                <p class="muted">Status updates appear in the candidate’s dashboard.</p>
+                {% if application.status != "withdrawn" %}
+                    <form method="post"
+                          action="{% url 'dashboard:manage_application' application.pk %}">
+                        {% csrf_token %}
+                        {% include "includes/fields.html" with form=status_form %}
+                        <button class="button full" type="submit">Update status</button>
+                    </form>
+                    <hr>
+                    {% if application.resume_available %}
+                        <a class="button button-light full"
+                           href="{% url 'dashboard:application_resume' application.pk %}">{% icon 'download' %}Download resume</a>
+                        <p class="help">Submitted resumes are private. Review only for this hiring process.</p>
+                    {% else %}
+                        <p class="help">No resume file is available for this application.</p>
+                    {% endif %}
+                {% endif %}
+                <small>Last updated {{ application.updated_date|date:'d M Y, H:i' }}</small>
+            </section>
+        </aside>
+    </div>
+{% endblock %}

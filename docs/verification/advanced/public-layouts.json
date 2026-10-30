@@ -1,0 +1,272 @@
+{
+  "layouts": [
+    {
+      "path": "/",
+      "width": 1440,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/",
+      "width": 1280,
+      "overflow": false,
+      "offenders": [
+        [
+          "DIV",
+          "orbit orbit-one"
+        ]
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "overflow": false,
+      "offenders": [
+        [
+          "DIV",
+          "orbit orbit-one"
+        ]
+      ]
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "overflow": false,
+      "offenders": [
+        [
+          "DIV",
+          "orbit orbit-one"
+        ]
+      ]
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/",
+      "width": 320,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/",
+      "width": 1440,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/",
+      "width": 1280,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/",
+      "width": 1024,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/",
+      "width": 768,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/",
+      "width": 390,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/",
+      "width": 320,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/1/",
+      "width": 1440,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/1/",
+      "width": 1280,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/1/",
+      "width": 1024,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/1/",
+      "width": 768,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/1/",
+      "width": 390,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/jobs/1/",
+      "width": 320,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/1/",
+      "width": 1440,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/1/",
+      "width": 1280,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/1/",
+      "width": 1024,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/1/",
+      "width": 768,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/1/",
+      "width": 390,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/1/",
+      "width": 320,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/",
+      "width": 1440,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/",
+      "width": 1280,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/",
+      "width": 1024,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/",
+      "width": 768,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/",
+      "width": 390,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/companies/",
+      "width": 320,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/accounts/login/",
+      "width": 1440,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/accounts/login/",
+      "width": 1280,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/accounts/login/",
+      "width": 1024,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/accounts/login/",
+      "width": 768,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/accounts/login/",
+      "width": 390,
+      "overflow": false,
+      "offenders": []
+    },
+    {
+      "path": "/accounts/login/",
+      "width": 320,
+      "overflow": false,
+      "offenders": []
+    }
+  ],
+  "checks": [
+    "Hero suggestions remain visible and tappable at desktop and mobile widths",
+    "Autocomplete keyboard selection and submitted location",
+    "Mobile drawer, Escape and functional combined filters",
+    "Permission-based geolocation resolves nearby city locally",
+    "Autocomplete uses offline fallback when endpoint fails"
+  ],
+  "errors": [],
+  "expected_failures": [
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "axe": [
+    {
+      "path": "/",
+      "violations": []
+    },
+    {
+      "path": "/jobs/",
+      "violations": []
+    },
+    {
+      "path": "/jobs/1/",
+      "violations": []
+    },
+    {
+      "path": "/companies/1/",
+      "violations": []
+    },
+    {
+      "path": "/companies/",
+      "violations": []
+    },
+    {
+      "path": "/accounts/login/",
+      "violations": []
+    }
+  ]
+}

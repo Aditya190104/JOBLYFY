@@ -1,0 +1,837 @@
+{
+  "checks": [
+    "Employer registration and automatic role redirect",
+    "Employer posts complete job with category, salary and deadline",
+    "Company profile editing",
+    "Job seeker registration with validated PDF upload",
+    "Combined keyword, location and work-mode filters",
+    "Save job and saved-jobs view",
+    "Apply with profile-resume snapshot and application tracking",
+    "Edit pending application",
+    "Job seeker profile editing",
+    "Saved job preferences drive candidate dashboard matches",
+    "Company review submitted with consent and hidden pending moderation",
+    "Employer login and POST logout",
+    "Owned candidate review, shortlist update and authorized resume download",
+    "Employer receives and opens a genuine application notification",
+    "Candidate receives status notification and marks it read",
+    "Candidate sees status and withdraws without deleting history",
+    "Mobile navigation toggle and Escape focus behavior"
+  ],
+  "layouts": [
+    {
+      "name": "employer-dashboard",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "employer-dashboard",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "employer-dashboard",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "job-list",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "job-list",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "job-list",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "job-list",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "job-list",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/jobseeker/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/jobseeker/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/jobseeker/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/jobseeker/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/applications/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/applications/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/applications/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/applications/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/profile/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/profile/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/profile/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/profile/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/saved/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/saved/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/saved/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/saved/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/preferences/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/preferences/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/preferences/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/preferences/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/settings/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/settings/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/settings/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/settings/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/notifications/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/notifications/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/notifications/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/notifications/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/review/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/review/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/review/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/review/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/jobs/1/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/jobs/1/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/jobs/1/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/jobs/1/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/employer/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/employer/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/employer/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/employer/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/jobs/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/jobs/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/jobs/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/jobs/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/employer/applications/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/employer/applications/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/employer/applications/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/employer/applications/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/application/1/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/application/1/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/application/1/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/dashboard/application/1/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/employer/profile/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/employer/profile/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/employer/profile/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/employer/profile/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/jobs/post/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/jobs/post/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/jobs/post/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/jobs/post/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/login/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/login/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/login/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/login/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/jobseeker/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/jobseeker/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/jobseeker/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/jobseeker/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/employer/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/employer/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/employer/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/signup/employer/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/password_reset/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/password_reset/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/password_reset/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/accounts/password_reset/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/companies/1/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/categories/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/categories/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/categories/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/categories/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/categories/1/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/categories/1/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/categories/1/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/categories/1/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/about/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/about/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/about/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    },
+    {
+      "name": "/about/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "unlabelled": []
+    }
+  ],
+  "console_errors": [],
+  "http_errors": []
+}

@@ -1,0 +1,5544 @@
+{
+  "date": "2026-10-30",
+  "checks": [
+    "Public routes, account screens, empty search, developer footer, responsive layout and motion coverage",
+    "Public cross-document transition observed: true",
+    "Reduced motion cancels active animations, remains static on scroll and reload, and can be changed live",
+    "Mobile menu and filter drawer: Escape, focus return, focus wrap, viewport changes and all background siblings inert",
+    "Keyboard location selection, matching records, actual fetch loading and offline catalog fallback",
+    "In-place save/remove confirms database state, duplicate request guard, network failure feedback, safe retry and toast focus return",
+    "Search card save state persists after reload",
+    "Closed-job conflict, invalid CSRF and expired session show errors without pretending a save succeeded",
+    "Incomplete and eligible checks, all question types, PDF selection, review, duplicate submission prevention and editable cover letter",
+    "Session and profile/application persistence after server restart and logout/login, password spaces, Remember me and candidate routes",
+    "Authorized recruiter reviews answers/resume, updates status, and candidate receives notification and correct chart",
+    "Candidate and recruiter cannot access another account’s private application or resume",
+    "Recruiter signup, job creation/edit, dynamic question insertion/reorder/save, publish and pause",
+    "Real password reset token, confirmation form, completion and new-password login",
+    "Existing generic dashboard and all three error templates render responsively",
+    "No-JavaScript search/login/save and missing animation API fallback remain usable"
+  ],
+  "layouts": [
+    {
+      "label": "/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/?search=no-such-motion-role",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/?search=no-such-motion-role",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/?search=no-such-motion-role",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/?search=no-such-motion-role",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/?search=no-such-motion-role",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/10/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/10/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/10/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/10/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/10/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/done/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/done/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/done/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/done/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/done/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/done/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/done/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/done/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/done/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/done/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/invalid/invalid/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/invalid/invalid/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/invalid/invalid/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/invalid/invalid/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/reset/invalid/invalid/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "empty-candidate-dashboard",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "empty-candidate-dashboard",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "empty-candidate-dashboard",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "empty-candidate-dashboard",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "empty-candidate-dashboard",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "incomplete-eligibility",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "incomplete-eligibility",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "incomplete-eligibility",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "incomplete-eligibility",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "incomplete-eligibility",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "screening",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "screening",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "screening",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "screening",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "screening",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "resume-selection",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "resume-selection",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "resume-selection",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "resume-selection",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "resume-selection",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "receipt",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "receipt",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "receipt",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "receipt",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "receipt",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "edit-application",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "edit-application",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "edit-application",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "edit-application",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "edit-application",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/password/done/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/password/done/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/password/done/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/password/done/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/password/done/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/application/1/",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/application/1/",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/application/1/",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/application/1/",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/application/1/",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "new-job",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "new-job",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "new-job",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "new-job",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "new-job",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "company-review",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "company-review",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "company-review",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "company-review",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "company-review",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "valid-password-reset",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "valid-password-reset",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "valid-password-reset",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "valid-password-reset",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "valid-password-reset",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "account-without-role",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "account-without-role",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "account-without-role",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "account-without-role",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "account-without-role",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-403",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-403",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-403",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-403",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-403",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-404",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-404",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-404",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-404",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-404",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-500",
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-500",
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-500",
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-500",
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    },
+    {
+      "label": "error-500",
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "missingLabels": []
+    }
+  ],
+  "axe": [
+    {
+      "label": "/",
+      "violations": []
+    },
+    {
+      "label": "/jobs/",
+      "violations": []
+    },
+    {
+      "label": "/jobs/?search=no-such-motion-role",
+      "violations": []
+    },
+    {
+      "label": "/jobs/2/",
+      "violations": []
+    },
+    {
+      "label": "/companies/",
+      "violations": []
+    },
+    {
+      "label": "/companies/3/",
+      "violations": []
+    },
+    {
+      "label": "/categories/",
+      "violations": []
+    },
+    {
+      "label": "/categories/10/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/login/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/password_reset/done/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/reset/done/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/reset/invalid/invalid/",
+      "violations": []
+    },
+    {
+      "label": "/about/",
+      "violations": []
+    },
+    {
+      "label": "mobile-filter-dialog",
+      "violations": []
+    },
+    {
+      "label": "empty-candidate-dashboard",
+      "violations": []
+    },
+    {
+      "label": "candidate-profile",
+      "violations": []
+    },
+    {
+      "label": "eligibility",
+      "violations": []
+    },
+    {
+      "label": "screening",
+      "violations": []
+    },
+    {
+      "label": "application-review",
+      "violations": []
+    },
+    {
+      "label": "receipt",
+      "violations": []
+    },
+    {
+      "label": "candidate-dashboard-chart",
+      "violations": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "violations": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "violations": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "violations": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "violations": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "violations": []
+    },
+    {
+      "label": "/dashboard/application/1/",
+      "violations": []
+    },
+    {
+      "label": "company-review",
+      "violations": []
+    },
+    {
+      "label": "valid-password-reset",
+      "violations": []
+    },
+    {
+      "label": "error-403",
+      "violations": []
+    },
+    {
+      "label": "error-404",
+      "violations": []
+    },
+    {
+      "label": "error-500",
+      "violations": []
+    }
+  ],
+  "motion": [
+    {
+      "label": "/",
+      "targets": 44,
+      "ready": 34,
+      "revealed": 10,
+      "hidden": 0
+    },
+    {
+      "label": "/jobs/",
+      "targets": 17,
+      "ready": 6,
+      "revealed": 11,
+      "hidden": 0
+    },
+    {
+      "label": "/jobs/?search=no-such-motion-role",
+      "targets": 8,
+      "ready": 0,
+      "revealed": 8,
+      "hidden": 0
+    },
+    {
+      "label": "/jobs/2/",
+      "targets": 12,
+      "ready": 9,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/companies/",
+      "targets": 13,
+      "ready": 0,
+      "revealed": 13,
+      "hidden": 0
+    },
+    {
+      "label": "/companies/3/",
+      "targets": 16,
+      "ready": 11,
+      "revealed": 5,
+      "hidden": 0
+    },
+    {
+      "label": "/categories/",
+      "targets": 30,
+      "ready": 0,
+      "revealed": 30,
+      "hidden": 0
+    },
+    {
+      "label": "/categories/10/",
+      "targets": 8,
+      "ready": 1,
+      "revealed": 7,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/login/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/signup/",
+      "targets": 7,
+      "ready": 1,
+      "revealed": 6,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "targets": 3,
+      "ready": 1,
+      "revealed": 2,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/password_reset/done/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/reset/done/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/reset/invalid/invalid/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/about/",
+      "targets": 6,
+      "ready": 0,
+      "revealed": 6,
+      "hidden": 0
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "targets": 12,
+      "ready": 0,
+      "revealed": 12,
+      "hidden": 0
+    },
+    {
+      "label": "/dashboard/applications/",
+      "targets": 3,
+      "ready": 1,
+      "revealed": 2,
+      "hidden": 0
+    },
+    {
+      "label": "/dashboard/saved/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/preferences/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/settings/",
+      "targets": 4,
+      "ready": 0,
+      "revealed": 4,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/settings/password/done/",
+      "targets": 2,
+      "ready": 1,
+      "revealed": 1,
+      "hidden": 0
+    },
+    {
+      "label": "/dashboard/employer/",
+      "targets": 9,
+      "ready": 2,
+      "revealed": 7,
+      "hidden": 0
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "targets": 3,
+      "ready": 0,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "targets": 4,
+      "ready": 1,
+      "revealed": 3,
+      "hidden": 0
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "targets": 9,
+      "ready": 5,
+      "revealed": 4,
+      "hidden": 0
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "targets": 8,
+      "ready": 3,
+      "revealed": 5,
+      "hidden": 0
+    },
+    {
+      "label": "/dashboard/application/1/",
+      "targets": 9,
+      "ready": 4,
+      "revealed": 5,
+      "hidden": 0
+    }
+  ],
+  "actual_animations": [
+    {
+      "label": "/",
+      "calls": [
+        {
+          "classes": "hero-glow",
+          "frames": [
+            {
+              "transform": "translate(-12px,8px) scale(.97)",
+              "opacity": 0.55
+            },
+            {
+              "transform": "translate(0,0) scale(1)",
+              "opacity": 1
+            }
+          ],
+          "options": {
+            "duration": 4200,
+            "easing": "ease-out",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "hero-halo",
+          "frames": [
+            {
+              "transform": "translate(-12px,8px) scale(.97)",
+              "opacity": 0.55
+            },
+            {
+              "transform": "translate(0,0) scale(1)",
+              "opacity": 1
+            }
+          ],
+          "options": {
+            "duration": 4200,
+            "easing": "ease-out",
+            "delay": 120
+          }
+        },
+        {
+          "classes": "eyebrow light",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "hero-description",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": "hero-search",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "recent-searches hero-recents",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "popular",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "hero-opportunities",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": "employer-cta",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/jobs/",
+      "calls": [
+        {
+          "classes": "search-heading-copy",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "search-filters panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "result-card selected",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "result-card ",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "job-preview panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "result-card ",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/jobs/?search=no-such-motion-role",
+      "calls": [
+        {
+          "classes": "search-heading-copy",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "search-filters panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "empty-state",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/jobs/2/",
+      "calls": [
+        {
+          "classes": "detail-heading panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel prose",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel apply-panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/companies/",
+      "calls": [
+        {
+          "classes": "container",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "company-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "company-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "company-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": "company-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "company-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "company-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "company-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/companies/3/",
+      "calls": [
+        {
+          "classes": "panel detail-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel prose",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel company-insights",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "panel company-reviews",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": "panel fit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/categories/",
+      "calls": [
+        {
+          "classes": "container",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "section-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": "category-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 140
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/categories/10/",
+      "calls": [
+        {
+          "classes": "container",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "job-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "job-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/login/",
+      "calls": [
+        {
+          "classes": "auth-art",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/signup/",
+      "calls": [
+        {
+          "classes": "role-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "role-card employer",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "calls": [
+        {
+          "classes": "auth-art",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "calls": [
+        {
+          "classes": "auth-art",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "calls": [
+        {
+          "classes": "auth-form-panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "auth-art",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/password_reset/done/",
+      "calls": [
+        {
+          "classes": "auth-form-panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "auth-art",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/reset/done/",
+      "calls": [
+        {
+          "classes": "auth-form-panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "auth-art",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/reset/invalid/invalid/",
+      "calls": [
+        {
+          "classes": "auth-form-panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "auth-art",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/about/",
+      "calls": [
+        {
+          "classes": "container narrow",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "profile-nudge",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 25
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 50
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 75
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 100
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 125
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 150
+          }
+        },
+        {
+          "classes": "panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "section-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "job-card",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/dashboard/applications/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        }
+      ]
+    },
+    {
+      "label": "/dashboard/saved/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/preferences/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/settings/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel fit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/settings/password/done/",
+      "calls": [
+        {
+          "classes": "panel narrow-panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/dashboard/employer/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": null,
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 105
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 25
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 50
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 75
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 100
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 125
+          }
+        },
+        {
+          "classes": "chart-bar",
+          "frames": [
+            {
+              "transform": "scaleX(.08)"
+            },
+            {
+              "transform": "scaleX(1)"
+            }
+          ],
+          "options": {
+            "duration": 480,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 150
+          }
+        },
+        {
+          "classes": "panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        }
+      ]
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        }
+      ]
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "notice",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "panel fit tips",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "calls": [
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "notice",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "developer-credit",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "/dashboard/application/1/",
+      "calls": [
+        {
+          "classes": "assessment assessment-met",
+          "frames": [
+            {
+              "opacity": 0.65
+            },
+            {
+              "opacity": 1
+            }
+          ],
+          "options": {
+            "duration": 240,
+            "easing": "cubic-bezier(.22,1,.36,1)"
+          }
+        },
+        {
+          "classes": "dashboard-heading",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        },
+        {
+          "classes": "notice warning",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 35
+          }
+        },
+        {
+          "classes": "panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 70
+          }
+        },
+        {
+          "classes": "panel",
+          "frames": [
+            {
+              "opacity": 0.92,
+              "transform": "translateY(12px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "options": {
+            "duration": 380,
+            "easing": "cubic-bezier(.22,1,.36,1)",
+            "delay": 0
+          }
+        }
+      ]
+    }
+  ],
+  "console_errors": [],
+  "http_errors": [],
+  "expected_errors": [
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    {
+      "url": "http://127.0.0.1:8790/jobs/2/save/",
+      "status": 409
+    },
+    "Failed to load resource: the server responded with a status of 409 (Conflict)",
+    {
+      "url": "http://127.0.0.1:8790/jobs/2/save/",
+      "status": 403
+    },
+    "Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    {
+      "url": "http://127.0.0.1:8790/_qa/error/403/",
+      "status": 403
+    },
+    "Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    {
+      "url": "http://127.0.0.1:8790/_qa/error/404/",
+      "status": 404
+    },
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    {
+      "url": "http://127.0.0.1:8790/_qa/error/500/",
+      "status": 500
+    },
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  ],
+  "browser_version": "133.0.6943.0"
+}

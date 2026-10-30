@@ -1,0 +1,154 @@
+{
+  "archive_integrity": "ok",
+  "commands": [
+    {
+      "args": [
+        "scripts/configure_env.py"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "scripts/configure_env.py"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "backup_database"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "migrate",
+        "--noinput"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "createcachetable"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "seed_categories"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "seed_demo_jobs"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "check"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "makemigrations",
+        "--check",
+        "--dry-run"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "migrate",
+        "--check"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "Python smoke assertions"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "migrate",
+        "--noinput"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "createcachetable"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "seed_categories"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "seed_demo_jobs"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "seed_demo_jobs"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "manage.py",
+        "check"
+      ],
+      "passed": true
+    },
+    {
+      "args": [
+        "Python smoke assertions"
+      ],
+      "passed": true
+    }
+  ],
+  "configure_env_preserves_existing": true,
+  "routes": {
+    "/": 200,
+    "/jobs/": 200,
+    "/companies/": 200,
+    "/categories/": 200,
+    "/accounts/login/": 200,
+    "/accounts/signup/": 200,
+    "/accounts/password_reset/": 200,
+    "/about/": 200,
+    "job_detail_pages": 18,
+    "signup_logout_casefold_password_spaces_login": "passed"
+  },
+  "fresh_database": {
+    "users": 4,
+    "jobs": 18,
+    "rules": 87,
+    "questions": 72,
+    "applications": 0
+  },
+  "identical_application_files": 149,
+  "windows_execution": "Not physically tested; setup commands executed with Linux Python 3.12 equivalents."
+}

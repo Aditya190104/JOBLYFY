@@ -1,0 +1,110 @@
+{
+  "axe": [
+    {
+      "name": "/",
+      "violations": []
+    },
+    {
+      "name": "/jobs/",
+      "violations": []
+    },
+    {
+      "name": "/jobs/?search=Frontend&location=Mohali&work_mode=hybrid",
+      "violations": []
+    },
+    {
+      "name": "/jobs/1/",
+      "violations": []
+    },
+    {
+      "name": "/companies/1/",
+      "violations": []
+    },
+    {
+      "name": "/accounts/login/",
+      "violations": []
+    },
+    {
+      "name": "/accounts/password_reset/",
+      "violations": []
+    },
+    {
+      "name": "suggestions-open",
+      "violations": []
+    },
+    {
+      "name": "mobile-filters-open",
+      "violations": []
+    },
+    {
+      "name": "/dashboard/jobseeker/",
+      "violations": []
+    },
+    {
+      "name": "/dashboard/jobseeker/ mobile",
+      "violations": []
+    },
+    {
+      "name": "/accounts/profile/",
+      "violations": []
+    },
+    {
+      "name": "/accounts/profile/ mobile",
+      "violations": []
+    },
+    {
+      "name": "/accounts/preferences/",
+      "violations": []
+    },
+    {
+      "name": "/accounts/preferences/ mobile",
+      "violations": []
+    },
+    {
+      "name": "/accounts/settings/",
+      "violations": []
+    },
+    {
+      "name": "/accounts/settings/ mobile",
+      "violations": []
+    },
+    {
+      "name": "/dashboard/notifications/",
+      "violations": []
+    },
+    {
+      "name": "/dashboard/notifications/ mobile",
+      "violations": []
+    },
+    {
+      "name": "/companies/1/review/",
+      "violations": []
+    },
+    {
+      "name": "/companies/1/review/ mobile",
+      "violations": []
+    },
+    {
+      "name": "/dashboard/saved/",
+      "violations": []
+    },
+    {
+      "name": "/dashboard/saved/ mobile",
+      "violations": []
+    }
+  ],
+  "checks": [
+    "Mobile filter accessibility and keyboard close",
+    "Clear location also clears distance and submits broader search",
+    "Enter submission and local recent-search clearing",
+    "Offline city fallback remains selectable during a forced 503",
+    "Denied location permission produces an actionable fallback",
+    "Map is not requested before click; address and external link persist",
+    "Search and mobile filters work with JavaScript disabled"
+  ],
+  "console_errors": [],
+  "external_map": "Map interaction tested; external iframe availability not confirmed in this environment",
+  "expected_failures": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ]
+}

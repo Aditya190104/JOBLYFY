@@ -1,0 +1,24 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Edit application — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <a class="back-link" href="{% url 'dashboard:applications' %}">← Your applications</a>
+    <header class="dashboard-heading">
+        <div>
+            <h1>Make your introduction count.</h1>
+            <p>Update your cover letter for {{ application.job.title }}.</p>
+        </div>
+    </header>
+    <section class="panel form-panel">
+        <form method="post">
+            {% csrf_token %}
+            {% include 'includes/fields.html' %}
+            <p class="help">
+                Your submitted resume is retained with this application. Cover letters can only be edited while the application is pending and the role is open.
+            </p>
+            <div class="form-actions">
+                <button class="button" type="submit">Save changes</button>
+                <a class="button button-quiet" href="{% url 'dashboard:applications' %}">Cancel</a>
+            </div>
+        </form>
+    </section>
+{% endblock %}

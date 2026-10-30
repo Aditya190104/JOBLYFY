@@ -1,0 +1,64 @@
+{
+  "data": {
+    "accounts_customuser": {
+      "original_rows": 6,
+      "current_rows": 6,
+      "original_columns_unchanged": true
+    },
+    "accounts_employer": {
+      "original_rows": 2,
+      "current_rows": 2,
+      "original_columns_unchanged": true
+    },
+    "accounts_jobseeker": {
+      "original_rows": 4,
+      "current_rows": 4,
+      "original_columns_unchanged": true
+    },
+    "accounts_customuser_groups": {
+      "original_rows": 0,
+      "current_rows": 0,
+      "original_columns_unchanged": true
+    },
+    "accounts_customuser_user_permissions": {
+      "original_rows": 0,
+      "current_rows": 0,
+      "original_columns_unchanged": true
+    },
+    "django_session": {
+      "original_rows": 1,
+      "current_rows": 1,
+      "original_columns_unchanged": true
+    }
+  },
+  "original_migrations": [
+    [
+      "apps/accounts/migrations/0002_add_employer_fields.py",
+      true
+    ],
+    [
+      "apps/accounts/migrations/0001_initial.py",
+      true
+    ],
+    [
+      "apps/accounts/migrations/__init__.py",
+      true
+    ],
+    [
+      "apps/dashboard/migrations/__init__.py",
+      true
+    ],
+    [
+      "apps/jobs/migrations/0002_job_experience_level.py",
+      true
+    ],
+    [
+      "apps/jobs/migrations/0001_initial.py",
+      true
+    ],
+    [
+      "apps/jobs/migrations/__init__.py",
+      true
+    ]
+  ]
+}

@@ -1,0 +1,28 @@
+/* Loaded only by public GET pages. Unsupported browsers navigate normally. */
+@media (prefers-reduced-motion: no-preference) {
+    @view-transition {
+        navigation: auto;
+    }
+    .site-header {
+        view-transition-name: portal-header;
+    }
+    ::view-transition-group(root), ::view-transition-group(portal-header) {
+        animation-duration: 180ms; animation-timing-function: ease-out;
+    }
+    ::view-transition-old(root) {
+        animation: page-leave 100ms ease-out both;
+    }
+    ::view-transition-new(root) {
+        animation: page-arrive 180ms ease-out both;
+    }
+}
+@keyframes page-leave { to { opacity: 0; } }
+@keyframes page-arrive { from { opacity: .65; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+    @view-transition {
+        navigation: none;
+    }
+    ::view-transition-group(*) {
+        animation: none !important;
+    }
+}

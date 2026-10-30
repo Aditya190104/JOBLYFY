@@ -1,0 +1,8 @@
+# Python 3.11+; Django 5.2 LTS. All runtime dependencies are pinned.
+Django==5.2.18
+asgiref==3.13.0
+sqlparse==0.6.0
+Pillow==12.3.0
+python-dotenv==1.2.4
+pypdf==6.21.2
+tzdata==2026.2

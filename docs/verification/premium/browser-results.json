@@ -1,0 +1,1040 @@
+{
+  "checks": [
+    "All public pages, footer link, responsive layouts and accessibility",
+    "Candidate registration, password visibility and role redirect",
+    "Browser-length signup session survives refresh",
+    "Profile, PDF, preferences and saved job stored through real forms",
+    "Incomplete eligibility shows a report without claiming full qualification",
+    "Two immediate submit attempts produce one browser request and one application",
+    "Eligibility, all four screening types, profile resume, final backend review and practice submission",
+    "Same browser session, account, profile, PDF, saved job, preference and application survive an actual Django process restart",
+    "Logout/login preserves password spaces; Remember me cookie and new browser context persist authentication",
+    "Authorized recruiter reviews answers and private PDF, then updates status",
+    "Other candidates and employers cannot access private applications, resumes or job editing",
+    "Candidate sees persisted recruiter status and notification, marks it read",
+    "Duplicate email and incorrect password show clear errors",
+    "Reset token generated via file-email backend; reset/login retain profile",
+    "Mobile menu, filter drawer, keyboard location autocomplete and matching results",
+    "Reduced motion disables animation; search works without JavaScript"
+  ],
+  "layouts": [
+    {
+      "label": "/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/1/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/1/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/1/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/1/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/1/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/companies/3/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/categories/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/login/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/about/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "candidate-profile",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "eligibility",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "eligibility",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "eligibility",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "eligibility",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "eligibility",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "screening-questions",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "screening-questions",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "screening-questions",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "screening-questions",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "screening-questions",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-review",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-receipt",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-receipt",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-receipt",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-receipt",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "application-receipt",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobseeker/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/applications/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/saved/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/preferences/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/settings/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/notifications/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "recruiter-candidate-review",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "recruiter-candidate-review",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "recruiter-candidate-review",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "recruiter-candidate-review",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "recruiter-candidate-review",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/jobs/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/dashboard/employer/applications/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/accounts/employer/profile/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/post/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/post/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/post/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/post/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/post/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/edit/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 1440,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 1024,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 768,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 390,
+      "overflow": false,
+      "missingLabels": []
+    },
+    {
+      "label": "/jobs/2/questions/",
+      "width": 320,
+      "overflow": false,
+      "missingLabels": []
+    }
+  ],
+  "axe": [
+    {
+      "label": "/",
+      "violations": []
+    },
+    {
+      "label": "/jobs/",
+      "violations": []
+    },
+    {
+      "label": "/jobs/1/",
+      "violations": []
+    },
+    {
+      "label": "/companies/",
+      "violations": []
+    },
+    {
+      "label": "/companies/3/",
+      "violations": []
+    },
+    {
+      "label": "/categories/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/login/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/signup/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/signup/jobseeker/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/signup/employer/",
+      "violations": []
+    },
+    {
+      "label": "/accounts/password_reset/",
+      "violations": []
+    },
+    {
+      "label": "/about/",
+      "violations": []
+    },
+    {
+      "label": "candidate-profile",
+      "violations": []
+    },
+    {
+      "label": "eligibility",
+      "violations": []
+    },
+    {
+      "label": "screening-questions",
+      "violations": []
+    },
+    {
+      "label": "application-review",
+      "violations": []
+    },
+    {
+      "label": "application-receipt",
+      "violations": []
+    },
+    {
+      "label": "candidate-dashboard",
+      "violations": []
+    },
+    {
+      "label": "recruiter-candidate-review",
+      "violations": []
+    },
+    {
+      "label": "employer-dashboard",
+      "violations": []
+    },
+    {
+      "label": "notifications",
+      "violations": []
+    }
+  ],
+  "console_errors": [],
+  "http_errors": []
+}

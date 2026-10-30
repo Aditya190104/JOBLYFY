@@ -1,0 +1,33 @@
+{% load static joblyfy %}
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div>
+                <a class="brand" href="{% url 'jobs:home' %}">
+                    <img src="{% static 'images/brand.svg' %}" width="32" height="32" alt="">
+                JOBLYFY.</a>
+                <p>
+                    Good work starts with
+                    <br>
+                    a great connection.
+                </p>
+            </div>
+            <div>
+                <h3>Find your next</h3>
+                <a href="{% url 'jobs:job_list' %}">Explore jobs</a><a href="{% url 'jobs:companies' %}">Discover companies</a><a href="{% url 'jobs:categories' %}">Browse categories</a>
+            </div>
+            <div>
+                <h3>Build your team</h3>
+                <a href="{% url 'accounts:employer_signup' %}">Join as an employer</a><a href="{% url 'jobs:post_job' %}">Post an opportunity</a><a href="{% url 'dashboard:employer_dashboard' %}">Employer dashboard</a>
+            </div>
+            <div>
+                <h3>Make your move</h3>
+                <a href="{% url 'accounts:jobseeker_signup' %}">Create a profile</a><a href="{% url 'accounts:password_reset' %}">Account help</a><a href="{% url 'jobs:about' %}">About JOBLYFY</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© {% now 'Y' %} JOBLYFY</span><span>Built for ambition. Designed for people.</span><a href="{% url 'jobs:about' %}#privacy">Privacy & platform information</a>
+        </div>
+        {% include 'includes/developer_credit.html' %}
+    </div>
+</footer>

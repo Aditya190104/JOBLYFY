@@ -1,0 +1,25 @@
+{% extends "dashboard/base.html" %}
+{% load joblyfy %}
+{% block title %}Manage jobs — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">YOUR HIRING WORKSPACE</p>
+            <h1>Manage your opportunities.</h1>
+            <p>Keep every role up to date and ready for the right person.</p>
+        </div>
+        <a class="button" href="{% url 'jobs:post_job' %}">{% icon 'plus' %}Post a job</a>
+    </header>
+    <section class="panel">
+        <nav class="tabs" aria-label="Job status">
+            <a href="{% url 'dashboard:manage_jobs' %}"
+               {% if not state %}aria-current="page"{% endif %}>All jobs</a><a href="?state=open"
+   {% if state == 'open' %}aria-current="page"{% endif %}>Open</a><a href="?state=draft"
+   {% if state == 'draft' %}aria-current="page"{% endif %}>Drafts</a><a href="?state=paused"
+   {% if state == 'paused' %}aria-current="page"{% endif %}>Paused</a><a href="?state=closed"
+   {% if state == 'closed' %}aria-current="page"{% endif %}>Closed</a><a href="?state=expired"
+   {% if state == 'expired' %}aria-current="page"{% endif %}>Expired</a></nav>
+        {% include "dashboard/includes/job_table.html" %}
+        {% include "jobs/includes/pagination.html" %}
+    </section>
+{% endblock %}

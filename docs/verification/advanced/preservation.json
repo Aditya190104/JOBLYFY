@@ -1,0 +1,93 @@
+{
+  "baseline": "db-before-advanced.sqlite3",
+  "tables": {
+    "django_content_type": {
+      "rows_before": 12,
+      "rows_after": 15,
+      "original_rows_and_columns_identical": true
+    },
+    "auth_group_permissions": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    },
+    "auth_permission": {
+      "rows_before": 48,
+      "rows_after": 60,
+      "original_rows_and_columns_identical": true
+    },
+    "auth_group": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    },
+    "accounts_customuser": {
+      "rows_before": 6,
+      "rows_after": 6,
+      "original_rows_and_columns_identical": true
+    },
+    "accounts_customuser_groups": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    },
+    "accounts_customuser_user_permissions": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    },
+    "accounts_employer": {
+      "rows_before": 2,
+      "rows_after": 2,
+      "original_rows_and_columns_identical": true
+    },
+    "django_admin_log": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    },
+    "jobs_category": {
+      "rows_before": 8,
+      "rows_after": 8,
+      "original_rows_and_columns_identical": true
+    },
+    "django_session": {
+      "rows_before": 1,
+      "rows_after": 1,
+      "original_rows_and_columns_identical": true
+    },
+    "accounts_jobseeker": {
+      "rows_before": 4,
+      "rows_after": 4,
+      "original_rows_and_columns_identical": true
+    },
+    "jobs_application": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    },
+    "jobs_job": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    },
+    "jobs_savedjob": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    },
+    "joblyfy_cache": {
+      "rows_before": 0,
+      "rows_after": 0,
+      "original_rows_and_columns_identical": true
+    }
+  },
+  "old_migrations_unchanged": true,
+  "new_migrations": [
+    "apps/jobs/migrations/0004_companyreview_job_demo_key_job_is_demo_and_more.py",
+    "apps/dashboard/migrations/0001_initial.py",
+    "apps/accounts/migrations/0004_employer_is_demo_jobpreference.py"
+  ],
+  "foreign_key_check": [],
+  "integrity_check": "ok"
+}

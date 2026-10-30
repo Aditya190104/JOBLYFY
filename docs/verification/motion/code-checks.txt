@@ -1,0 +1,5 @@
+30 October 2026
+Python compileall: passed
+node --check: joblyfy.js, search.js, screening.js, motion.js, saved-jobs.js passed
+pip check: No broken requirements found
+No runtime dependencies added.

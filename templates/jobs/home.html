@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static joblyfy %}
+{% block content %}
+    <section class="hero">
+        <div class="hero-atmosphere" aria-hidden="true"><span class="hero-glow"></span><span class="hero-halo"></span></div>
+        <div class="hero-grid container">
+            <div class="hero-copy">
+                <p class="eyebrow light">
+                    <span class="live-dot"></span> A new way forward
+                </p>
+                <h1>
+                    Your next chapter
+                    <br>
+                    starts <span>right here.</span>
+                </h1>
+                <p class="hero-description">
+                    Big ambitions. Fresh beginnings. Find the work
+                    <br class="desktop-only">
+                    that feels like your next great move.
+                </p>
+                <form class="hero-search"
+                      method="get"
+                      action="{% url 'jobs:job_list' %}"
+                      role="search"
+                      data-job-search>
+                    <div>
+                        {% icon 'search' %}
+                        <label class="hero-field-label" for="hero-keyword">What are you looking for?</label>
+                        <input id="hero-keyword"
+                               name="search"
+                               placeholder="Job title, skill or company"
+                               maxlength="150">
+                    </div>
+                    <div>
+                        {% icon 'pin' %}
+                        <label class="hero-field-label" for="hero-location">Where would you like to work?</label>
+                        <input id="hero-location"
+                               data-location-input
+                               autocomplete="off"
+                               name="location"
+                               placeholder="Location"
+                               maxlength="100">
+                    </div>
+                    <button class="button" type="submit">Find jobs {% icon 'arrow' %}</button>
+                </form>
+                <div class="recent-searches hero-recents"
+                     data-recent-searches
+                     role="group"
+                     aria-label="Recent searches"></div>
+                <div class="popular">
+                    <span>Popular searches</span><a href="{% url 'jobs:job_list' %}?search=Frontend">Frontend</a><a href="{% url 'jobs:job_list' %}?search=Python">Python</a><a href="{% url 'jobs:job_list' %}?job_type=internship">Internships</a><a href="{% url 'jobs:job_list' %}?work_mode=remote">Remote</a>
+                </div>
+            </div>
+            {% include 'jobs/includes/hero_opportunities.html' %}
+        </div>
+        <div class="hero-caption container">
+            <span>For the curious. The ambitious. The ready-for-something-new.</span><span>YOUR NEXT IS OUT THERE ↗</span>
+        </div>
+    </section>
+    <section class="container platform-strip"
+             aria-label="Current platform statistics">
+        <div>
+            <strong>{{ listing_count }}</strong><span>Open listings{% if sample_job_count %} · {{ sample_job_count }} samples{% endif %}</span>
+        </div>
+        <div>
+            <strong>{{ company_count }}</strong><span>Registered companies</span>
+        </div>
+        <div>
+            <strong>{{ category_count }}</strong><span>Career categories</span>
+        </div>
+        <p>
+            {% icon 'shield' %}Your search. Your applications.
+            <br>
+            One connected workspace.
+        </p>
+    </section>
+    {% include 'jobs/sections/categories.html' %}
+    {% include 'jobs/sections/featured_jobs.html' %}
+    <section class="section soft-section">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">BEHIND EVERY OPPORTUNITY</p>
+                    <h2>Meet your next team.</h2>
+                </div>
+                <a class="text-link" href="{% url 'jobs:companies' %}">Explore companies {% icon 'arrow' %}</a>
+            </div>
+            <div class="company-grid">
+                {% for company in companies %}
+                    {% include 'jobs/includes/company_card.html' %}
+                {% empty %}
+                    {% include 'includes/empty.html' with title='A space for ambitious teams' message='Create your company profile and introduce your team to future applicants.' %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% include 'jobs/sections/how_it_works.html' %}
+    <section class="container">
+        <div class="employer-cta">
+            <div>
+                <p class="eyebrow light">GREAT PEOPLE. GREAT POSSIBILITIES.</p>
+                <h2>
+                    Your next great hire
+                    <br>
+                    starts with a hello.
+                </h2>
+                <p>Bring your opportunities to people ready to make a difference.</p>
+            </div>
+            <a class="button button-white"
+               href="{% url 'accounts:employer_signup' %}">Start hiring {% icon 'arrow' %}</a>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "dashboard/base.html" %}
+{% load joblyfy %}
+{% block title %}My dashboard — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">LET’S MAKE YOUR NEXT MOVE</p>
+            <h1>
+                Welcome back, {{ user.first_name|default:user.username }}<span class="hello-dot">.</span>
+            </h1>
+            <p>Your opportunities, all in one place.</p>
+        </div>
+        <a class="button" href="{% url 'jobs:job_list' %}">Explore jobs {% icon 'arrow' %}</a>
+    </header>
+    <div class="stat-grid">
+        <article><span class="stat-icon">{% icon 'file' %}</span><strong>{{ stats.total }}</strong><span>Applications</span></article><article><span class="stat-icon green">{% icon 'check' %}</span><strong>{{ stats.shortlisted }}</strong><span>Shortlisted</span></article><article><span class="stat-icon peach">{% icon 'user' %}</span><strong>{{ stats.interview }}</strong><span>Interviews</span></article><article><span class="stat-icon blue">{% icon 'spark' %}</span><strong>{{ stats.accepted }}</strong><span>Accepted</span></article>
+    </div>
+    <div class="profile-nudge">
+        <span class="nudge-icon">{% icon 'user' %}</span>
+        <div>
+            <h2>A stronger profile. A clearer introduction.</h2>
+            <p>Your profile is {{ profile.completeness }}% complete. Tell employers what makes you, you.</p>
+            <progress max="100"
+                      value="{{ profile.completeness }}"
+                      aria-label="Profile completeness">{{ profile.completeness }}%</progress>
+        </div>
+        <a class="button button-white small"
+           href="{% url 'accounts:user_profile' %}">Edit profile {% icon 'arrow' %}</a>
+    </div>
+    {% include 'dashboard/includes/status_distribution.html' %}
+    <section class="panel">
+        <div class="section-heading compact">
+            <div>
+                <h2>Your recent applications</h2>
+                <p>Every step of the journey, in view.</p>
+            </div>
+            <a class="text-link" href="{% url 'dashboard:applications' %}">View all {% icon 'arrow' %}</a>
+        </div>
+        {% include "dashboard/includes/application_table.html" %}
+    </section>
+    <section class="top-gap">
+        <div class="section-heading">
+            <div>
+                <h2>
+                    {% if preference_active %}
+                        Picked by your preferences.
+                    {% else %}
+                        Fresh from the job board.
+                    {% endif %}
+                </h2>
+                <a href="{% url 'accounts:job_preferences' %}">
+                    {% if preference_active %}
+                        Adjust your preferences
+                    {% else %}
+                        Set your job preferences
+                    {% endif %}
+                →</a>
+            </div>
+            <a class="text-link"
+               href="{% url 'dashboard:saved_jobs' %}">{{ saved_count }} saved {% icon 'bookmark' %}</a>
+        </div>
+        <div class="job-grid">
+            {% for job in latest_jobs %}
+                {% include "jobs/includes/job_card.html" %}
+            {% empty %}
+                {% include "includes/empty.html" with title="Your next opportunity is on its way." message="Try broader job preferences or check back as employers publish new roles." %}
+            {% endfor %}
+        </div>
+    </section>
+    {% if drafts %}<section class="panel"><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h2>Unfinished applications</h2>{% for draft in drafts %}<div class="draft-row"><div><strong>{{ draft.job.title }}</strong><p>{{ draft.job.employer.company_name }} · Updated {{ draft.updated_at|timesince }} ago</p></div>{% if draft.job.is_open %}<a class="button button-light tiny"
+   href="{% url 'jobs:application_start' draft.job.pk %}">Continue</a>{% else %}<span class="status">{{ draft.job.status_label }}</span>{% endif %}<form method="post"
+      action="{% url 'jobs:discard_draft' draft.job.pk %}"
+      data-confirm="Discard this unfinished application?">{% csrf_token %}<button class="button button-quiet tiny" type="submit">Discard</button></form></div>{% endfor %}<p class="help">Only you can see unfinished applications. Up to five most recently updated drafts are shown.</p></section>{% endif %}
+{% endblock %}

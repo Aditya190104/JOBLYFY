@@ -1,0 +1,29 @@
+{% load joblyfy %}
+<article class="job-card" data-job-card>
+    <div class="job-card-top">
+        {% include 'includes/company_logo.html' with company=job.employer %}
+        <span class="tag {% if job.job_type == 'internship' %}mint{% endif %}">{{ job.get_job_type_display }}</span>
+    </div>
+    {% if job.is_demo %}<span class="sample-label">Sample listing · not a real vacancy</span>{% endif %}
+    <div>
+        <p class="company-name">
+            <a href="{{ job.employer.get_absolute_url }}">{{ job.employer.company_name }}</a>
+        </p>
+        <h3>
+            <a href="{{ job.get_absolute_url }}" data-job-link>{{ job.title }}</a>
+        </h3>
+    </div>
+    <div class="job-meta">
+        <span>{% icon 'pin' %}{{ job.location }}</span><span>{% icon 'briefcase' %}{{ job.get_work_mode_display }}</span>
+    </div>
+    <span class="posting-date">Posted {{ job.posted_date|date:'d M Y' }}</span>
+    <p class="job-summary">{{ job.card_description|truncatewords:17 }}</p>
+    <div class="job-card-bottom">
+        <div>
+            <strong>{{ job.salary_display }}</strong><span>{{ job.get_experience_level_display }}</span>
+        </div>
+        <a class="circle-link"
+           href="{{ job.get_absolute_url }}"
+           aria-label="View {{ job.title }}">{% icon 'arrow' %}</a>
+    </div>
+</article>

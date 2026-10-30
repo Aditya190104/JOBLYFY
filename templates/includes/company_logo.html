@@ -1,0 +1,9 @@
+<span class="company-logo {% if large %}large{% endif %}">
+    {% if company.logo_available %}
+        <img src="{% url 'accounts:company_logo' company.pk %}"
+             alt="{{ company.company_name }} logo"
+             loading="lazy">
+    {% else %}
+        <span aria-label="{{ company.company_name }}">{{ company.initials|default:'J' }}</span>
+    {% endif %}
+</span>

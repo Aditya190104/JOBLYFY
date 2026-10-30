@@ -1,0 +1,38 @@
+{% load joblyfy %}
+{% if featured_jobs %}
+    <section class="section container">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">IN THE SPOTLIGHT</p>
+                <h2>Featured opportunities.</h2>
+                <p>Featured open listings. Development samples are labelled on each card.</p>
+            </div>
+            <a class="text-link" href="{% url 'jobs:job_list' %}">Explore jobs {% icon 'arrow' %}</a>
+        </div>
+        <div class="job-grid">
+            {% for job in featured_jobs %}
+                {% include 'jobs/includes/job_card.html' %}
+            {% endfor %}
+        </div>
+    </section>
+{% endif %}
+<section class="section container">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">THE NEXT CHAPTER</p>
+            <h2>Fresh opportunities.</h2>
+            <p>
+                The latest open roles on the job board.
+                {% if sample_job_count %}Includes {{ sample_job_count }} clearly labelled development samples.{% endif %}
+            </p>
+        </div>
+        <a class="text-link" href="{% url 'jobs:job_list' %}">View all jobs {% icon 'arrow' %}</a>
+    </div>
+    <div class="job-grid">
+        {% for job in recent_jobs %}
+            {% include 'jobs/includes/job_card.html' %}
+        {% empty %}{% url 'jobs:post_job' as post_url %}
+            {% include 'includes/empty.html' with title='The next opportunity starts here.' message='No jobs have been published yet. Building a team? Be the first to share an opportunity.' action_url=post_url action_label='Post a job' %}
+        {% endfor %}
+    </div>
+</section>

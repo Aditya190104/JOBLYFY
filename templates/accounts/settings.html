@@ -1,0 +1,45 @@
+{% extends 'dashboard/base.html' %}
+{% load joblyfy %}
+{% block title %}Account settings — JOBLYFY{% endblock %}
+{% block dashboard_content %}
+    <header class="dashboard-heading">
+        <div>
+            <p class="eyebrow">YOUR ACCOUNT, YOUR CONTROL</p>
+            <h1>Account settings</h1>
+            <p>Keep your account secure and your details up to date.</p>
+        </div>
+    </header>
+    <div class="settings-grid">
+        <section class="panel">
+            <h2>Change your password</h2>
+            <form method="post">
+                {% csrf_token %}
+                {% include 'includes/fields.html' %}
+                <button class="button" type="submit">Update password</button>
+            </form>
+        </section>
+        <aside class="panel fit">
+            <h2>Signed in as {{ user.username }}</h2>
+            <p class="help">Your profile, saved jobs and applications stay in your account after you sign out. Use “Keep me signed in” on your next login to stay signed in for 14 days on this device.</p>
+            <h3>Make it yours</h3>
+            {% if user.is_employer %}
+                <p>
+                    <a href="{% url 'accounts:employer_profile' %}">Edit company and contact details →</a>
+                </p>
+            {% elif user.is_job_seeker %}
+                <p>
+                    <a href="{% url 'accounts:user_profile' %}">Edit profile and contact details →</a>
+                </p>
+                <p>
+                    <a href="{% url 'accounts:job_preferences' %}">Manage job preferences →</a>
+                </p>
+            {% endif %}
+            <p>
+                <a href="{% url 'dashboard:notifications' %}">Your application updates →</a>
+            </p>
+            <p class="help">
+                Application updates are available in your workspace. This portal does not send automatic marketing emails.
+            </p>
+        </aside>
+    </div>
+{% endblock %}

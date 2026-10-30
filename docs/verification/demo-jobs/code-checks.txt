@@ -1,0 +1,3 @@
+Ruff F checks passed.
+No broken dependencies.
+JavaScript syntax checks passed for joblyfy.js, screening.js and search.js.

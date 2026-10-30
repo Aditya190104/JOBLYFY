@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "Pending save notice dismissal keeps focus; confirmed save animates the bookmark",
+    "File selection feedback animation executes",
+    "Question reorder animation remains active after focus restoration",
+    "Reduced motion cancels the current editor animation"
+  ],
+  "console_errors": []
+}

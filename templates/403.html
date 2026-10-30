@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="section container narrow error-page">
+        <span class="error-number">403</span>
+        <h1>This workspace isn’t yours.</h1>
+        <p>Use the account with the right role to access this page.</p>
+        <a class="button" href="{% url 'jobs:home' %}">Back to JOBLYFY</a>
+    </section>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% load joblyfy %}
+{% if jobs %}
+    <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>Opportunity</th>
+                    <th>Applications</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Manage</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for job in jobs %}
+                    <tr>
+                        <td>
+                            <a href="{{ job.get_absolute_url }}">{{ job.title }}</a><small>{{ job.location }} · {{ job.get_job_type_display }}</small>
+                        </td>
+                        <td>
+                            <a href="{% url 'dashboard:employer_applications' %}?job={{ job.pk }}">{{ job.application_count }} application{{ job.application_count|pluralize }}</a>
+                        </td>
+                        <td>{{ job.deadline|date:'d M Y'|default:'No deadline' }}</td>
+                        <td>
+                            <span class="status {% if job.is_open %}status-accepted{% else %}status-withdrawn{% endif %}">{{ job.status_label }}</span>
+                        </td>
+                        <td>
+                            <div class="row-actions">
+                                <a class="button button-light tiny"
+                                   href="{% url 'jobs:edit_job' job.pk %}">Edit</a>
+                                <a class="button button-light tiny"
+                                   href="{% url 'jobs:screening_questions' job.pk %}">Questions</a><form method="post" action="{% url 'jobs:change_job_status' job.pk %}">{% csrf_token %}{% if job.publication_status == "published" %}<input type="hidden" name="status" value="paused"><button type="submit" class="button button-quiet tiny">Pause</button>{% else %}<input type="hidden" name="status" value="published"><button type="submit" class="button button-quiet tiny">Publish</button>{% endif %}</form>{% if job.publication_status != "closed" %}<form method="post"
+      action="{% url 'jobs:change_job_status' job.pk %}"
+      data-confirm="Close this role to new applications? Existing applications will remain available.">{% csrf_token %}<input type="hidden" name="status" value="closed"><button type="submit" class="button button-quiet tiny">Close</button></form>{% endif %}
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    {% url 'jobs:post_job' as post_url %}
+    {% include "includes/empty.html" with title="Make room for someone great." message="Publish your first role and start meeting candidates." action_url=post_url action_label="Post a job" %}
+{% endif %}

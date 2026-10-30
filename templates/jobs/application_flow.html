@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load joblyfy %}
+{% block title %}Apply for {{ job.title }} — JOBLYFY{% endblock %}
+{% block content %}
+    <div class="container application-page">
+        <a class="back-link" href="{{ job.get_absolute_url }}">← Review the job description</a>
+        <header class="application-heading">
+            <div>
+                <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+                <h1>{{ job.title }}</h1>
+                <p>{{ job.employer.company_name }} · {{ job.location }} · {{ job.get_work_mode_display }}</p>
+            </div>
+            <span class="tag">Step {{ step_number }} of 4</span>
+        </header>
+        {% if job.is_demo %}<div class="notice warning"><strong>Practice application · fictional vacancy.</strong> Your answers and PDF are saved locally and can be reviewed by the authorized demo recruiter. No real employer receives this application. Use a test resume without private information.</div>{% endif %}
+<nav class="application-steps" aria-label="Application progress">{% for item in steps %}{% if item.available %}<a href="{{ item.url }}"
+   {% if step == item.key %}aria-current="step"{% endif %}><span>{{ item.number }}</span>{{ item.label }}</a>{% else %}<span class="step-unavailable"><span>{{ item.number }}</span>{{ item.label }}</span>{% endif %}{% endfor %}</nav>{% if notice %}<div class="notice warning" role="alert">{{ notice }}</div>{% endif %}
+        <div class="application-layout">
+            <div>
+                {% if step == "review" %}
+                    <section class="panel"><p class="eyebrow">ONE LAST LOOK</p><h2>Ready for your introduction?</h2><p>Check your answers and resume below. The server will check the current rules again when you submit.</p><div class="review-resume"><div><h3>Selected resume</h3><p>{{ draft.resume_label|default:'Your selected PDF' }}</p></div>{% if draft.resume_available %}<a class="button button-light"
+   href="{% url 'jobs:draft_resume' job.pk %}">{% icon 'download' %}View selected PDF</a>{% endif %}</div><h3>Cover letter</h3><div class="prose">{{ draft.cover_letter|default:'No cover letter added.'|linebreaks }}</div><a class="text-link" href="?step=resume">Change resume or introduction</a></section>
+                    {% include "jobs/includes/eligibility_report.html" %}<section class="panel"><form method="post" action="{% url 'jobs:apply_job' job.pk %}">{% csrf_token %}{% include "includes/fields.html" with form=final_form %}<button class="button" type="submit">{% if job.is_demo %}Submit practice application{% else %}Submit application{% endif %} {% icon 'arrow' %}</button></form><p class="help">Submitted eligibility and screening answers are kept as a fixed record. You can edit a pending cover letter or withdraw an eligible application from your dashboard.</p></section>
+                {% else %}<section class="panel"><h2>{% if step == "eligibility" %}See how your experience matches.{% elif step == "questions" %}A few questions from the team.{% else %}Put your experience in their hands.{% endif %}</h2>
+                    {% if step == "eligibility" %}<p class="muted">Use your actual qualifications and skills. You can check, correct and check again. Empty answers stay unknown; they are never counted as a match.</p>{% endif %}{% if step == "questions" %}<p class="muted">Answer the {{ question_count }} question{{ question_count|pluralize }} configured for this role. Only questions marked required need an answer.</p>{% endif %}{% if step == "resume" %}<p class="muted">Your selected resume will be copied into this application. Later profile changes will not replace it.</p>{% endif %}
+                    <form method="post"
+                          enctype="multipart/form-data"
+                          {% if step == 'eligibility' %}novalidate{% endif %}>{% csrf_token %}<input type="hidden" name="step" value="{{ step }}"><input type="hidden" name="draft_version" value="{{ draft_version }}">{% include "includes/fields.html" %}{% if not form.fields %}<p>No {% if step == "questions" %}screening questions{% else %}automatic eligibility questions{% endif %} are configured. You can continue.</p>{% endif %}<div class="form-actions">{% if step == "eligibility" %}<button class="button button-light" type="submit" name="action" value="check">Check eligibility</button>{% endif %}<button class="button" type="submit" name="action" value="continue">{% if step == "resume" %}Review application{% else %}Save & continue{% endif %} {% icon 'arrow' %}</button></div></form></section>{% if report %}{% include "jobs/includes/eligibility_report.html" %}{% endif %}{% endif %}
+            </div><aside><section class="panel fit"><p class="eyebrow">THE OPPORTUNITY</p><h2>{{ job.employer.company_name }}</h2><dl class="facts"><div><dt>Salary</dt><dd>{{ job.salary_display }}</dd></div><div><dt>Experience</dt><dd>{{ job.experience_display }}</dd></div><div><dt>Apply by</dt><dd>{{ job.deadline|date:'d M Y'|default:'Open until closed' }}</dd></div><div><dt>Job status</dt><dd>{{ job.status_label }}</dd></div></dl>{% if job.application_instructions %}<h3>Application instructions</h3><div class="prose">{{ job.application_instructions|linebreaks }}</div>{% endif %}<p class="help">Your unfinished answers are private to your account. They are shared with this employer only after submission.</p>{% if draft.pk %}<form method="post"
+      action="{% url 'jobs:discard_draft' job.pk %}"
+      data-confirm="Discard this unfinished application and its selected draft resume?">{% csrf_token %}<button class="button button-quiet tiny danger" type="submit">Discard unfinished application</button></form>{% endif %}</section></aside></div></div>
+{% endblock %}

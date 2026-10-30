@@ -1,0 +1,19 @@
+{% load joblyfy %}
+<aside class="hero-opportunities" aria-label="Featured open opportunities">
+    <div class="hero-board-label"><span class="live-dot"></span> YOUR NEXT OPPORTUNITY <span>↗</span></div>
+    <div class="hero-board">
+        <div class="hero-board-heading"><div><span class="eyebrow">A WORLD OF POSSIBILITY</span><h2>Find your kind of work.</h2></div>{% icon 'spark' %}</div>
+        {% for job in featured_jobs|slice:':2' %}
+        <article class="hero-role">
+            <div class="hero-role-top">{% include 'includes/company_logo.html' with company=job.employer %}<div><span>{{ job.employer.company_name }}</span><h3><a href="{{ job.get_absolute_url }}">{{ job.title }}</a></h3></div></div>
+            <p>{% icon 'pin' %}{{ job.location }} <span>· {{ job.get_work_mode_display }}</span></p>
+            <div class="hero-role-bottom"><strong>{{ job.salary_display }}</strong>{% if job.is_demo %}<span class="sample-label">Sample vacancy</span>{% else %}<span class="tag">{{ job.get_job_type_display }}</span>{% endif %}</div>
+        </article>
+        {% empty %}
+        <div class="hero-board-empty">{% icon 'briefcase' %}<h3>Your next chapter is waiting.</h3><p>Build your profile and explore new roles as teams publish them.</p></div>
+        {% endfor %}
+        <a class="hero-board-link" href="{% url 'jobs:job_list' %}">Explore {{ listing_count }} open listing{{ listing_count|pluralize }} {% icon 'arrow' %}</a>
+    </div>
+    <div class="hero-board-note">{% icon 'shield' %}<span>Your skills. Your choices.<br><strong>A clearer path forward.</strong></span></div>
+</aside>
+

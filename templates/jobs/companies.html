@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load joblyfy %}
+{% block title %}Discover companies — JOBLYFY{% endblock %}
+{% block content %}
+    <section class="page-banner">
+        <div class="container">
+            <p class="eyebrow">FIND YOUR PEOPLE</p>
+            <h1>A great team changes everything.</h1>
+            <p>Get to know the companies behind the opportunities.</p>
+            <form class="directory-search" method="get">
+                <label class="sr-only" for="company-search">Search companies, industries or locations</label>
+                <input id="company-search"
+                       name="search"
+                       value="{{ search }}"
+                       maxlength="150"
+                       placeholder="Company, industry or location">
+                <button class="button" type="submit">{% icon 'search' %} Search</button>
+            </form>
+        </div>
+    </section>
+    <section class="section container">
+        <div class="result-toolbar">
+            <h2>{{ page_obj.paginator.count }} compan{{ page_obj.paginator.count|pluralize:'y,ies' }}</h2>
+            {% if search %}
+                <a href="{% url 'jobs:companies' %}">Clear search</a>
+            {% endif %}
+        </div>
+        <div class="company-grid">
+            {% for company in companies %}
+                {% include 'jobs/includes/company_card.html' %}
+            {% empty %}
+                {% include 'includes/empty.html' with title='No matching companies.' message='Try another name, industry or location.' %}
+            {% endfor %}
+        </div>
+        {% include 'jobs/includes/pagination.html' %}
+    </section>
+{% endblock %}

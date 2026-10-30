@@ -1,0 +1,139 @@
+{
+  "original_tables": [
+    {
+      "table": "django_migrations",
+      "original_rows": 28,
+      "unchanged": true
+    },
+    {
+      "table": "django_content_type",
+      "original_rows": 19,
+      "unchanged": true
+    },
+    {
+      "table": "auth_group_permissions",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "auth_permission",
+      "original_rows": 76,
+      "unchanged": true
+    },
+    {
+      "table": "auth_group",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "accounts_customuser",
+      "original_rows": 6,
+      "unchanged": true
+    },
+    {
+      "table": "accounts_customuser_groups",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "accounts_customuser_user_permissions",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "django_admin_log",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_category",
+      "original_rows": 8,
+      "unchanged": true
+    },
+    {
+      "table": "django_session",
+      "original_rows": 1,
+      "unchanged": true
+    },
+    {
+      "table": "accounts_jobseeker",
+      "original_rows": 4,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_savedjob",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "joblyfy_cache",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "accounts_employer",
+      "original_rows": 2,
+      "unchanged": true
+    },
+    {
+      "table": "accounts_jobpreference",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_companyreview",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "dashboard_notification",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_application",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_job",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_screeningquestion",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_applicationdraft",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_eligibilityrule",
+      "original_rows": 0,
+      "unchanged": true
+    },
+    {
+      "table": "jobs_screeninganswer",
+      "original_rows": 0,
+      "unchanged": true
+    }
+  ],
+  "unchanged_migration_files": 13,
+  "counts": {
+    "accounts_customuser": 10,
+    "accounts_jobseeker": 4,
+    "accounts_employer": 6,
+    "jobs_category": 23,
+    "jobs_job": 18,
+    "jobs_eligibilityrule": 87,
+    "jobs_screeningquestion": 72,
+    "jobs_application": 0,
+    "jobs_applicationdraft": 0,
+    "jobs_screeninganswer": 0
+  },
+  "integrity_check": "ok",
+  "foreign_key_errors": []
+}

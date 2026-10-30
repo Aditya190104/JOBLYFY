@@ -1,0 +1,2 @@
+Django production-sensitive system check exit code: 0
+System check identified no issues (0 silenced).

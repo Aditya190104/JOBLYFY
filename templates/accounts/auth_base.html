@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load joblyfy %}
+{% block body_class %}auth-page{% endblock %}
+{% block content %}
+    <div class="container auth-layout">
+        <section class="auth-form-panel">
+            {% block auth_content %}{% endblock %}
+        </section>
+        <aside class="auth-art">
+            <p class="eyebrow light">A LITTLE AMBITION. ENDLESS POSSIBILITY.</p>
+            <h2>
+                Your future
+                <br>
+                looks good
+                <br>
+                <span>from here.</span>
+            </h2>
+            <div class="auth-orbit">
+                <span class="auth-symbol">↗</span><span class="orbit-badge">{% icon 'spark' %}</span>
+            </div>
+            <p>
+                Find meaningful work.
+                <br>
+                Build a team that makes a difference.
+                <br>
+                Start your next chapter with JOBLYFY.
+            </p>
+            <div class="auth-art-bottom">LET’S SEE WHAT’S NEXT. {% icon 'arrow' %}</div>
+        </aside>
+    </div>
+{% endblock %}
+{% block footer %}{% include 'includes/compact_footer.html' %}{% endblock %}
