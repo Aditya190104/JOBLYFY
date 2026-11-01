@@ -5,7 +5,7 @@ from decimal import Decimal
 from django.conf import settings
 from django.core.management import call_command
 from django.core.management.base import BaseCommand, CommandError
-from django.db import transaction
+from django.db import transaction, connection
 from django.db.models import F
 from django.utils import timezone
 from apps.accounts.models import CustomUser, Employer
@@ -44,12 +44,16 @@ class Command(BaseCommand):
             action="store_true",
             help="Seed missing entries and renew existing deadlines for 60 days without unpausing jobs.",
         )
-
+        parser.add_argument(
+            "--allow-production-demo",
+             action="store_true",
+            help="Allow creating clearly labelled demo jobs in production.",
+        )  
     def handle(self, *args, **options):
-        if not settings.DEBUG:
+        if not settings.DEBUG and not options["allow_production_demo"]:
             raise CommandError(
-                "Demo jobs are local-development features (DJANGO_DEBUG=True). Do not enable DEBUG on a public deployment."
-            )
+        "Production demo seeding requires the explicit --allow-production-demo flag."
+        )
         if options["refresh_deadlines"] and any(
             options[k] for k in ("deactivate", "reactivate", "remove_unused")
         ):
@@ -59,7 +63,8 @@ class Command(BaseCommand):
         keys = [DEMO_PREFIX + row["slug"] for row in JOBS]
         if len(set(keys)) != len(keys):
             raise CommandError("Catalog slugs must be unique. No records changed.")
-        call_command("backup_database", stdout=self.stdout)
+        if connection.vendor == "sqlite":
+          call_command("backup_database", stdout=self.stdout)
         with transaction.atomic():
             teams = {}
             for key, values in COMPANIES.items():
@@ -90,7 +95,7 @@ class Command(BaseCommand):
                     )
             owned = Job.objects.filter(pk__in=[j.pk for j in existing.values()])
             deadline = timezone.localdate() + timedelta(days=60)
-            if options["deactivate"]:
+            if options["deactivate"]:   
                 count = owned.update(
                     is_active=False,
                     publication_status="paused",

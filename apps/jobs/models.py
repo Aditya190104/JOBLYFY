@@ -26,12 +26,14 @@ class Category(models.Model):
 
 class JobQuerySet(models.QuerySet):
     def open(self):
-        qs = self if settings.DEBUG else self.filter(is_demo=False)
-        return qs.filter(
+        return self.filter(
             is_active=True,
             publication_status="published",
             employer__user__is_active=True,
-        ).filter(Q(deadline__isnull=True) | Q(deadline__gte=timezone.localdate()))
+        ).filter(
+            Q(deadline__isnull=True) |
+            Q(deadline__gte=timezone.localdate())
+        )
 
 
 class Job(models.Model):
@@ -288,7 +290,6 @@ class Job(models.Model):
         return (
             self.is_active
             and self.publication_status == "published"
-            and (settings.DEBUG or not self.is_demo)
             and self.employer.user.is_active
             and (not self.deadline or self.deadline >= timezone.localdate())
         )

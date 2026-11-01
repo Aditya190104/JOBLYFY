@@ -29,7 +29,7 @@ def open_filter(prefix="jobs__"):
             **{prefix + "is_active": True, prefix + "employer__user__is_active": True},
         )
         & Q(**{prefix + "publication_status": "published"})
-        & (Q() if settings.DEBUG else Q(**{prefix + "is_demo": False}))
+      
         & (
             Q(**{prefix + "deadline__isnull": True})
             | Q(**{prefix + "deadline__gte": timezone.localdate()})
@@ -46,7 +46,7 @@ def categories_query():
 def companies_query():
     return (
         Employer.objects.filter(user__is_active=True)
-        .filter(Q() if settings.DEBUG else Q(is_demo=False))
+        
         .select_related("user")
         .annotate(
             open_count=Count("jobs", filter=open_filter(), distinct=True),
@@ -82,7 +82,7 @@ def home(request):
             "listing_count": jobs.count(),
             "sample_job_count": jobs.filter(is_demo=True).count(),
             "company_count": Employer.objects.filter(
-                user__is_active=True, is_demo=False
+                user__is_active=True
             ).count(),
             "category_count": Category.objects.count(),
         },
@@ -268,8 +268,7 @@ def job_detail_context(request, job, form=None):
 
 def job_detail(request, job_id):
     job = get_object_or_404(with_company(Job.objects.all()), pk=job_id)
-    if job.is_demo and not settings.DEBUG:
-        raise Http404
+    
     context = job_detail_context(request, job)
     owner = request.user.is_authenticated and job.employer.user_id == request.user.pk
     if (
